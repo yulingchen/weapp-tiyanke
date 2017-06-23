@@ -5,8 +5,24 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "backgroundColor": "#E8E8ED",
+    "navigationBarBackgroundColor": "#C81623",
+    "navigationBarTitleText": "体验客",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#E22D3D",
+    "backgroundColor":"#FFFFFF",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "体验"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "分享"
+    }, {
+      "pagePath": "pages/logs/logs",
+      "text": "我的"
+    }]
   }
 }
