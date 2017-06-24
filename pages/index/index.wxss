@@ -1,4 +1,31 @@
 /**index.wxss**/
+.topbar{
+	background-color:#C81623;
+	text-align:center;
+	padding:0 20rpx 20rpx 20rpx;
+}
+
+.topbar .logo{
+	margin:30rpx 0;
+	width:280rpx;
+	height:74rpx;
+}
+
+.topbar .search-btn{
+	background-color:#fff;
+	color:#ccc;
+	font-size:14px;
+	height:60rpx;
+	line-height:60rpx;
+	border-radius:40rpx;
+}
+
+.topbar .search-btn .search-icon{
+	display:inline-block;
+	margin-top:7px;
+	vertical-align:top;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
