@@ -6,12 +6,14 @@ Page({
     motto: 'Hello World',
     userInfo: {}
   },
-  //事件处理函数
-  bindViewTap: function() {
+
+  // 跳转到体验分类页面
+  pushCategoryView: function(){
     wx.navigateTo({
-      url: '../logs/logs'
+      url: '../category/index'
     })
   },
+
   onLoad: function () {
     console.log('onLoad')
     var that = this

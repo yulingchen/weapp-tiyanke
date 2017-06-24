@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="topbar">
+		<image src="../../../assets/images/logo.png" class="logo"></image>
+		<button type="default" class="search-btn" hover-class="none" bindtap="pushCategoryView">
+			<icon type="search" class="search-icon" size="14" color="#ccc" /> 体验一把
+		</button>
+	</view>
+
+  <!--
+	  <view  bindtap="bindViewTap" class="userinfo">
+	    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+	    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	  </view>
+	  <view class="usermotto">
+	    <text class="user-motto">{{motto}}</text>
+	  </view>
+  -->
+</view>
