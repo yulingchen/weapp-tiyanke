@@ -16,13 +16,19 @@
     "backgroundColor":"#FFFFFF",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "体验"
+      "text": "体验",
+      "iconPath":"assets/images/ty.png",
+      "selectedIconPath":"assets/images/ty-active.png"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "分享"
+      "text": "分享",
+      "iconPath":"assets/images/fx.png",
+      "selectedIconPath":"assets/images/fx-active.png"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "我的"
+      "text": "我的",
+      "iconPath":"assets/images/my.png",
+      "selectedIconPath":"assets/images/my-active.png"
     }]
   }
 }
