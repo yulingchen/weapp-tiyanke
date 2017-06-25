@@ -26,6 +26,54 @@
 	vertical-align:top;
 }
 
+.menus{
+	background-color:#FFFFFF;
+	color:#666666;
+	margin-bottom:20rpx;
+	padding:25rpx 0;
+}
+
+.menus .menu-item{
+	text-align:center;
+	font-size:12px;
+}
+
+.menus .menu-icon{
+	width:54rpx;
+	height:54rpx;
+	margin-bottom:5rpx;
+}
+
+.hot-area{
+	background-color:#FFFFFF;
+	min-height:800rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;

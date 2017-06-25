@@ -9,6 +9,14 @@
   box-sizing: border-box;*/
 } 
 
+.flex-wrap{
+	display:flex;
+}
+
+.flex-item{
+	flex:1;
+}
+
 .coming{
 	text-align:center;
 	margin:150rpx 0 0;

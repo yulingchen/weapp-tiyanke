@@ -7,6 +7,20 @@ Page({
     userInfo: {}
   },
 
+  // 跳转到资讯页面
+  pushStoreView: function(){
+    wx.navigateTo({
+      url: '../../store/index/index'
+    })
+  },
+
+  // 跳转到资讯页面
+  pushNewsView: function(){
+    wx.navigateTo({
+      url: '../../news/index/index'
+    })
+  },
+
   // 跳转到体验分类页面
   pushCategoryView: function(){
     wx.navigateTo({

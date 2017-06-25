@@ -1,0 +1,5 @@
+<view class="container">
+	<view class="coming">
+		<image src="../../../assets/images/coming.png" class="coming-img"></image>
+	</view>
+</view>

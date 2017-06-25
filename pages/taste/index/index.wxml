@@ -6,6 +6,36 @@
 		</button>
 	</view>
 
+	<view class="menus">
+		<view class="flex-wrap" style="flex-direction:row;">
+	    
+	    <view class="flex-item menu-item">
+	    	<image src="../../../assets/images/category.png" class="menu-icon"></image>
+	    	<view>体验分类</view>
+	    </view>
+
+	    <view class="flex-item menu-item" bindtap="pushStoreView">
+	    	<image src="../../../assets/images/store.png" class="menu-icon"></image>
+	    	<view>体验店</view>
+	    </view>
+
+	    <view class="flex-item menu-item" bindtap="pushNewsView">
+	    	<image src="../../../assets/images/news.png" class="menu-icon"></image>
+	    	<view>新品·资讯</view>
+	    </view>
+
+	    <view class="flex-item menu-item" bindtap="pushCategoryView">
+	    	<image src="../../../assets/images/category.png" class="menu-icon"></image>
+	    	<view>体验分类</view>
+	    </view>
+
+	  </view>
+	</view>
+
+	<view class="hot-area">
+		
+	</view>
+
   <!--
 	  <view  bindtap="bindViewTap" class="userinfo">
 	    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
