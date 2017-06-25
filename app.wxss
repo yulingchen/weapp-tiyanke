@@ -8,3 +8,13 @@
   padding: 200rpx 0;
   box-sizing: border-box;*/
 } 
+
+.coming{
+	text-align:center;
+	margin:150rpx 0 0;
+}
+
+.coming-img{
+	width:150px;
+	height:150px;
+}

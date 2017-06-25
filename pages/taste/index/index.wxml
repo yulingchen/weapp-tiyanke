@@ -1,4 +1,3 @@
-<!--index.wxml-->
 <view class="container">
 	<view class="topbar">
 		<image src="../../../assets/images/logo.png" class="logo"></image>
