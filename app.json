@@ -2,6 +2,8 @@
   "pages":[
     "pages/taste/index/index",
     "pages/taste/category/index",
+    "pages/taste/detail/activity/index",
+
     "pages/news/index/index",
     "pages/top/index/index",
     "pages/store/index/index",
@@ -11,7 +13,6 @@
   "window":{
     "backgroundTextStyle":"light",
     "backgroundColor": "#E8E8ED",
-    "navigationBarTitleText": "体验客",
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle":"black"
   },

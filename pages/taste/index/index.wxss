@@ -6,7 +6,7 @@
 }
 
 .topbar .logo{
-	margin:0 0 20rpx;
+	margin:0 0 40rpx;
 	width:280rpx;
 	height:74rpx;
 }
@@ -15,8 +15,8 @@
 	background-color:#fff;
 	color:#ccc;
 	font-size:14px;
-	height:70rpx;
-	line-height:70rpx;
+	height:80rpx;
+	line-height:80rpx;
 	border-radius:60rpx;
 }
 
@@ -45,8 +45,7 @@
 }
 
 .hot-area{
-	background-color:#FFFFFF;
-	min-height:800rpx;
+	padding:0 20rpx;
 }
 
 

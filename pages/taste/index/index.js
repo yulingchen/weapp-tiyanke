@@ -35,6 +35,12 @@ Page({
     })
   },
 
+  pushActivityDetailView: function(){
+    wx.navigateTo({
+      url: '../detail/activity/index'
+    })
+  },
+  
   onLoad: function () {
     console.log('onLoad')
     var that = this

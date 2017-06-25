@@ -26,3 +26,25 @@
 	width:150px;
 	height:150px;
 }
+
+.taste-item{
+	background-color:#FFFFFF;
+	margin-bottom:20rpx;
+	padding:20rpx;
+}
+
+.taste-item .taste-title{
+	font-size:15px;
+	color:#333333;
+}
+
+.taste-item .taste-desc{
+	font-size:12px;
+	color:#999999;
+}
+
+.taste-item .taste-cover{
+	width:100%;
+	max-height:300rpx;
+	margin-top:10rpx;
+}
