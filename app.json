@@ -2,6 +2,7 @@
   "pages":[
     "pages/taste/index/index",
     "pages/taste/category/index",
+    "pages/taste/list/index",
     "pages/taste/detail/activity/index",
 
     "pages/news/index/index",

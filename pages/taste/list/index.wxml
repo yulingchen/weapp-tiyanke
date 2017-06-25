@@ -1,0 +1,33 @@
+<view class="container">
+	<view class="taste-list">
+		<view class="taste-item" bindtap="pushActivityDetailView">
+			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
+			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
+			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		</view>
+
+		<view class="taste-item" bindtap="pushActivityDetailView">
+			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
+			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
+			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		</view>
+
+		<view class="taste-item" bindtap="pushActivityDetailView">
+			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
+			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
+			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		</view>
+
+		<view class="taste-item" bindtap="pushActivityDetailView">
+			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
+			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
+			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		</view>
+
+		<view class="taste-item" bindtap="pushActivityDetailView">
+			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
+			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
+			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		</view>
+	</view>
+</view>

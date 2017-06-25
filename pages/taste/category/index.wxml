@@ -1,5 +1,48 @@
 <view class="container">
-	<view class="coming">
-		<image src="../../../assets/images/coming.png" class="coming-img"></image>
+	<view class="category-section">
+		<view class="category-large">
+			<view class="large-title active">互联网</view>
+			<view class="large-title">手机数码</view>
+			<view class="large-title">女装内衣</view>
+			<view class="large-title">男装内衣</view>
+			<view class="large-title">家用电器</view>
+		</view>
+
+		<view class="category-small">
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+
+			<view class="category-item" bindtap="pushActivityDetailView">
+				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-small-title">产品内测</view>
+			</view>
+		</view>
 	</view>
 </view>
