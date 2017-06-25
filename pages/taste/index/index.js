@@ -7,7 +7,14 @@ Page({
     userInfo: {}
   },
 
-  // 跳转到资讯页面
+  // 跳转到达人榜页面
+  pushTopView: function(){
+    wx.navigateTo({
+      url: '../../top/index/index'
+    })
+  },
+
+  // 跳转到体验店页面
   pushStoreView: function(){
     wx.navigateTo({
       url: '../../store/index/index'

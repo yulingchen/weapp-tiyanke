@@ -8,10 +8,10 @@
 
 	<view class="menus">
 		<view class="flex-wrap" style="flex-direction:row;">
-	    
-	    <view class="flex-item menu-item">
-	    	<image src="../../../assets/images/category.png" class="menu-icon"></image>
-	    	<view>体验分类</view>
+
+			<view class="flex-item menu-item" bindtap="pushTopView">
+	    	<image src="../../../assets/images/daren.png" class="menu-icon"></image>
+	    	<view>达人排行榜</view>
 	    </view>
 
 	    <view class="flex-item menu-item" bindtap="pushStoreView">
@@ -21,7 +21,7 @@
 
 	    <view class="flex-item menu-item" bindtap="pushNewsView">
 	    	<image src="../../../assets/images/news.png" class="menu-icon"></image>
-	    	<view>新品·资讯</view>
+	    	<view>体验资讯</view>
 	    </view>
 
 	    <view class="flex-item menu-item" bindtap="pushCategoryView">
