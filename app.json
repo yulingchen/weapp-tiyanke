@@ -15,6 +15,7 @@
     "backgroundTextStyle":"light",
     "backgroundColor": "#E8E8ED",
     "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTitleText": "体验客",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
