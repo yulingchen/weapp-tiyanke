@@ -29,7 +29,7 @@ App({
               code: res.code
             },
             success: function(res) {
-              wx.setStorageSync('wxappSessionId', res.data.data.sessionId)
+              wx.setStorageSync('wxappSessionId', res.data.data)
               typeof cb == "function" && cb()
             }
           })
