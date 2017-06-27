@@ -1,5 +1,49 @@
-<view class="container">
-	<view class="coming">
-		<image src="../../../assets/images/coming.png" class="coming-img"></image>
-	</view>
+<view class="taste">
+  <!--header部分开始-->
+  <!--<view class="header-wrp" style="flex-direction:row;">
+    <view class="header-item">
+      <text class="name">甜品饮品</text>
+      <text class="triangle">▼</text>  
+    </view>
+    <view class="header-item">
+      <text class="name">排序</text>
+      <text class="triangle">▼</text>  
+    </view>
+    <view class="header-item">
+      <text class="name">筛选</text>
+      <text class="triangle">▼</text>  
+    </view>
+  </view>-->
+  <!--header部分结束-->
+  <!--content部分开始-->
+  <scroll-view class="scrollView" scroll-y="true" lower-threshold="100" bindscrolltolower="getMoreData">
+    <view class="content-wrp" wx:for="items" wx:key='unique'>
+      <view class="avatar">
+        <image style="width: 62px; height: 62px;" src="../../../assets/images/avatar_1.png"></image>
+      </view>
+      <view class="content">
+        <view class="title">
+          <text>浓农情怡鲜炖燕窝(西乡店)</text>
+        </view>
+        <view class="description">
+          <image class="star" style="width: 60px; height: 11px;" src="../../../assets/images/star.png"></image>
+          <text class="text">月销5笔</text>
+        </view>
+        <view class="price-distance">
+          <text class="price">起送￥0 | 配送￥0 | 人均￥168</text>
+          <text class="distance">2.2千米</text>
+        </view> 
+        <view class="line"></view>
+        <view class="support">
+          <icon type="String" />
+          <text class="text">在线支付满100减25，满200减38，满3...</text>
+        </view>
+        <view class="support">
+          <icon type="String" />
+          <text class="text">本店支持开发票，请在下单时填写好发...</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <!--content部分结束-->
 </view>

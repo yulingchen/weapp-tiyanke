@@ -1,5 +1,5 @@
-<view class="usercenter" bindTap="gotoSetting">
-  <view class="header" bindTap="gotoSetting">
+<view class="usercenter" >
+  <view class="header" >
     <view  class="userinfo">
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <view>
