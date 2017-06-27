@@ -17,6 +17,8 @@
     "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh": true
+    "navigationBarTitleText": "体验客",
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "color":"#666666",
