@@ -1,5 +1,31 @@
-<view class="container">
-	<view class="coming">
-		<image src="../../../assets/images/coming.png" class="coming-img"></image>
-	</view>
+<view class="usercenter" bindTap="gotoSetting">
+  <view class="header" bindTap="gotoSetting">
+    <view  class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <view>
+        <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+        <view class="userinfo-lv">1级</view>
+      </view>
+    </view>
+  </view>
+
+  
+  <view class="menu-container">
+    <view class="menu-item" bindtap="gotoMyTaste" >
+      <view class="left" >
+        <image src="../../../assets/images/my/taste.png" class="menu-item-icon" background-size="cover"></image>
+        <text>我的体验</text>
+      </view>
+      <view class="right"> <image src="../../../assets/images/my/right.png"  background-size="cover"></image></view>
+    </view>
+
+    <view class="menu-item" bindtap="gotoMyShare">
+      <view class="left" >
+        <image src="../../../assets/images/my/share.png" class="menu-item-icon" background-size="cover"></image>
+        <text>我的分享</text>
+      </view>
+      <view class="right"> <image src="../../../assets/images/my/right.png"  background-size="cover"></image></view>
+    </view>
+  </view>
+
 </view>

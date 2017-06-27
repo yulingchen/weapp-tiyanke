@@ -9,7 +9,10 @@
     "pages/top/index/index",
     "pages/store/index/index",
     "pages/share/index/index",
-    "pages/my/index/index"
+
+    "pages/my/index/index",
+    "pages/my/my-share/index",
+    "pages/my/my-taste/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

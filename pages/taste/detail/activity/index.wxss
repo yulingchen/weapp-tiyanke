@@ -1,0 +1,67 @@
+.usercenter{
+  background-color: #efefef;
+  min-height:100%;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+}
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff ;
+  color: #4d5152;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+  margin: 30rpx 0;
+  padding: 30rpx;
+}
+.userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+
+.userinfo-nickname {
+  color: #4d5152;
+  font-size: 30rpx;
+  
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.menu-item{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff ;
+  padding: 30rpx;
+  font-size: 28rpx;
+  color: #4d5152;
+  border-top:1px solid #eee;
+  border-bottom:1px solid #eee;
+  margin: 30rpx 0;
+}
+.menu-item .left{
+  display: flex;
+  align-items:center;
+  font-size: 32rpx;
+}
+
+.menu-item-setting{
+  width: 48rpx;
+  height: 48rpx;
+  margin-right:10rpx;
+}
+
+.right{
+  color: #999;
+  font-size: 28rpx;
+  font-weight: bold;
+}
