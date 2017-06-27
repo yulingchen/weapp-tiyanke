@@ -1,0 +1,84 @@
+/**index.wxss**/
+.taste{
+  background-color:#fff;
+  font-size:12px;
+}
+.header-wrp {
+  display: flex;
+  width:100%;
+  height: 35px;
+  line-height: 35px;
+  border-top: 1px solid #C7C9CA;
+  border-bottom: 1px solid #C7C9CA;
+}
+.header-wrp .header-item{
+  flex:1;
+  text-align: center;
+}
+.header-wrp .header-item .name{
+  margin-right: 8px;
+  font-size:11px;
+  font-weight: 300;
+  font-family: '宋体', Cochin, Georgia, Times, Times New Roman, serif;
+}
+.header-wrp .header-item .triangle{
+  font-size:8px ;
+  font-weight: 200;
+  color:#83868C;
+}
+.content-wrp{
+  padding: 11px 11px 0px 8px ;
+  border-bottom: 1px solid #C7C9CA;
+}
+.content-wrp .avatar{
+  display: inline-block;
+  vertical-align: top;
+}
+.content-wrp .avatar image{
+  border-radius: 2px;
+}
+.content-wrp .content{
+  display: inline-block;
+  margin-left: 9px;
+}
+.content-wrp .content .title{
+  margin-bottom: 10px;
+  font-size:13px;
+}
+.content-wrp .content .description{
+  margin-bottom: 12px;
+}
+.content-wrp .content .description .star{
+  margin-right: 5px;
+  vertical-align: top;
+}
+.content-wrp .content .description .text{
+  margin-right: 5px;
+  font-size:10px;
+  color: #666666;
+}
+.content-wrp .content .price-distance{
+  margin-bottom: 7px;
+}
+.content-wrp .content .price-distance .price{
+  font-size:9px;
+  color:#666666;
+}
+.content-wrp .content .price-distance .distance{
+  display: inline-block;
+  margin-left: 111px;
+  font-size:9px;
+  color:#666666;
+}
+.content-wrp .content .line{
+  margin-bottom:9px;
+  height:1px;
+  border-top:1px dashed #E6E6E6;
+}
+.content-wrp .content .support{
+  margin-bottom:11px ;
+}
+.content-wrp .content .support .text{
+  font-size:9px;
+  color: #9A9A9A;
+}

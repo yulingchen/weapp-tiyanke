@@ -6,7 +6,9 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
-
+  onPullDownRefresh:function() {
+    console.log('下拉刷新')
+  }, 
   getUserInfo: function(cb) {
     var that = this
     if (this.globalData.userInfo) {
