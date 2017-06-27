@@ -18,7 +18,9 @@ App({
       })
     }
   },
-
+  onPullDownRefresh:function() {
+    console.log('下拉刷新')
+  }, 
   login(cb){
     wx.login({
       success: function(res) {

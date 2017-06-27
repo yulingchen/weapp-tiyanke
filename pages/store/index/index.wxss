@@ -1,0 +1,86 @@
+/**index.wxss**/
+.taste{
+  background-color:#fff;
+  font-size:12px;
+}
+.header-wrp {
+  display: flex;
+  width:100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-top: 1px solid #C7C9CA;
+  border-bottom: 1px solid #C7C9CA;
+}
+.header-wrp .header-item{
+  flex:1;
+  text-align: center;
+}
+.header-wrp .header-item .name{
+  margin-right: 16rpx;
+  font-size:22rpx;
+  font-weight: 300;
+}
+.header-wrp .header-item .triangle{
+  font-size:24rpx ;
+  font-weight: 200;
+  color:#83868C;
+}
+.content-wrp{
+  padding: 22rpx 22rpx 0px 16rpx ;
+  border-bottom: 1px solid #C7C9CA;
+  display:flex;
+}
+.content-wrp .avatar{
+  display: inline-block;
+  vertical-align: top;
+}
+.content-wrp .avatar image{
+  border-radius: 2px;
+}
+.content-wrp .content{
+  display: inline-block;
+  margin-left: 18rpx;
+  flex: 1;
+}
+.content-wrp .content .title{
+  margin-bottom: 20rpx;
+  font-size:30rpx;
+}
+.content-wrp .content .description{
+  margin-bottom: 24rpx;
+}
+.content-wrp .content .description .star{
+  margin-right: 10rpx;
+  vertical-align: top;
+}
+.content-wrp .content .description .text{
+  margin-right: 5px;
+  font-size:30rpx;
+  color: #666666;
+}
+.content-wrp .content .price-distance{
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+.content-wrp .content .price-distance .price{
+  font-size:24rpx;
+  color:#666666;
+}
+.content-wrp .content .price-distance .distance{
+  display: inline-block;
+  font-size:24rpx;
+  color:#666666;
+}
+.content-wrp .content .line{
+  margin-bottom: 18rpx;
+  height:1px;
+  border-top:1px dashed #E6E6E6;
+}
+.content-wrp .content .support{
+  margin-bottom:22rpx ;
+}
+.content-wrp .content .support .text{
+  font-size:24rpx;
+  color: #9A9A9A;
+}

@@ -1,5 +1,66 @@
-<view class="container">
-	<view class="coming">
-		<image src="../../../assets/images/coming.png" class="coming-img"></image>
-	</view>
+<view class="share">
+  <!--header部分开始-->
+  <view class="header clearfix">
+    <view class="banner">
+      <image style="width: 100%; height: 245px;" src="../../../assets/images/share_banner.png"></image>  
+    </view>
+    <view class="avatar">
+      <image style="width: 76px; height: 76px;" src="../../../assets/images/share_avatar.png"></image>
+    </view>
+  </view>
+  <!--header部分结束-->
+  <!--content部分开始-->
+  <view class="content-wrp">
+    <view class="avatar">
+      <image style="width: 38px; height: 38px;" src="../../../assets/images/share_author_avatar.png"></image>
+    </view>
+    <view class="content">
+      <text class="author">肖小姑</text>
+      <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
+      <view class="img-decription">
+        <image style="width: 103px; height: 183px;" src="../../../assets/images/share_img_description.png"></image>
+      </view>
+      <view class="state">
+        <text class="text">昨天</text>
+        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--content部分结束-->
+    <!--content部分开始-->
+  <view class="content-wrp">
+    <view class="avatar">
+      <image style="width: 38px; height: 38px;" src="../../../assets/images/share_author_avatar.png"></image>
+    </view>
+    <view class="content">
+      <text class="author">肖小姑</text>
+      <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
+      <view class="img-decription">
+        <image style="width: 103px; height: 183px;" src="../../../assets/images/share_img_description.png"></image>
+      </view>
+      <view class="state">
+        <text class="text">昨天</text>
+        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--content部分结束-->
+    <!--content部分开始-->
+  <view class="content-wrp">
+    <view class="avatar">
+      <image style="width: 38px; height: 38px;" src="../../../assets/images/share_author_avatar.png"></image>
+    </view>
+    <view class="content">
+      <text class="author">肖小姑</text>
+      <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
+      <view class="img-decription">
+        <image style="width: 103px; height: 183px;" src="../../../assets/images/share_img_description.png"></image>
+      </view>
+      <view class="state">
+        <text class="text">昨天</text>
+        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
+      </view>
+    </view>
+  </view>
+  <!--content部分结束-->
 </view>
