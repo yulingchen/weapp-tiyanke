@@ -47,3 +47,9 @@ page{
 	margin-top:10rpx;
 }
 
+/* 20rpx 的灰色背景区分*/
+.division-20{
+  height: 20rpx;
+  background-color: #eee;
+}
+

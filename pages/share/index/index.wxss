@@ -40,14 +40,12 @@
   line-height: 21px;
   font-size:14px;
   color:#576B95;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .content-wrp .content .decription{
   line-height: 21px;
   font-size:14px;
   color:#000;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 5px;
 }
 .content-wrp .content .img-decription{
@@ -58,9 +56,8 @@
 }
 .content-wrp .content .state .text{
   display: inline-block;
-  font-size: 10px;
-  font-weight: bold;
-  color:#808080;
+  font-size: 24rpx;
+  color:#999;
 }
 .content-wrp .content .state image{
   display: inline-block;
