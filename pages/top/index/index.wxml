@@ -1,5 +1,154 @@
-<view class="container">
-	<view class="coming">
-		<image src="../../../assets/images/coming.png" class="coming-img"></image>
+<view class="rank">
+	<view class="border">
 	</view>
+  <view class="intelligent-wrp">
+    <view class="intelligent">
+      <view class="ranking">
+        <view class="icon">
+          <image style="width: 32rpx; height: 40rpx;" src="../../../assets/images/column.png"></image>
+        </view>
+        <text class="text">第一名</text>
+      </view>
+      <view class="info">
+        <view class="avatar">
+          <image style="width: 150rpx; height: 150rpx;" src="../../../assets/images/rank_avatar.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">张沫凡MOMO ^.^</view>
+          <view class="view">美沫沫莫尔又来招聘拉！！欢迎加入~~…</view>
+          <view class="points">积分：900</view>
+        </view>
+        <view class="attention">
+          <image style="width: 64rpx; height: 64rpx;" src="../../../assets/images/attention.png"></image>
+        </view>
+      </view>
+      <view class="photos">
+        <ul>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+        </ul>
+      </view>
+    </view>
+    <view class="intelligent">
+      <view class="ranking">
+        <view class="icon">
+          <image style="width: 32rpx; height: 40rpx;" src="../../../assets/images/column.png"></image>
+        </view>
+        <text class="text">第一名</text>
+      </view>
+      <view class="info">
+        <view class="avatar">
+          <image style="width: 150rpx; height: 150rpx;" src="../../../assets/images/rank_avatar.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">张沫凡MOMO ^.^</view>
+          <view class="view">美沫沫莫尔又来招聘拉！！欢迎加入~~…</view>
+          <view class="points">积分：900</view>
+        </view>
+        <view class="attention">
+          <image style="width: 64rpx; height: 64rpx;" src="../../../assets/images/attention.png"></image>
+        </view>
+      </view>
+      <view class="photos">
+        <ul>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+        </ul>
+      </view>
+    </view>
+    <view class="intelligent">
+      <view class="ranking">
+        <view class="icon">
+          <image style="width: 32rpx; height: 40rpx;" src="../../../assets/images/column.png"></image>
+        </view>
+        <text class="text">第一名</text>
+      </view>
+      <view class="info">
+        <view class="avatar">
+          <image style="width: 150rpx; height: 150rpx;" src="../../../assets/images/rank_avatar.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">张沫凡MOMO ^.^</view>
+          <view class="view">美沫沫莫尔又来招聘拉！！欢迎加入~~…</view>
+          <view class="points">积分：900</view>
+        </view>
+        <view class="attention">
+          <image style="width: 64rpx; height: 64rpx;" src="../../../assets/images/attention.png"></image>
+        </view>
+      </view>
+      <view class="photos">
+        <ul>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+        </ul>
+      </view>
+    </view>
+    <view class="intelligent">
+      <view class="ranking">
+        <view class="icon">
+          <image style="width: 32rpx; height: 40rpx;" src="../../../assets/images/column.png"></image>
+        </view>
+        <text class="text">第一名</text>
+      </view>
+      <view class="info">
+        <view class="avatar">
+          <image style="width: 150rpx; height: 150rpx;" src="../../../assets/images/rank_avatar.png"></image>
+        </view>
+        <view class="content">
+          <view class="name">张沫凡MOMO ^.^</view>
+          <view class="view">美沫沫莫尔又来招聘拉！！欢迎加入~~…</view>
+          <view class="points">积分：900</view>
+        </view>
+        <view class="attention">
+          <image style="width: 64rpx; height: 64rpx;" src="../../../assets/images/attention.png"></image>
+        </view>
+      </view>
+      <view class="photos">
+        <ul>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_photo.png"></image>
+          </li>
+          <li>
+            <image style="width: 180rpx; height: 180rpx;" src="../../../assets/images/rank_pic.png"></image>
+          </li>
+        </ul>
+      </view>
+    </view>
+  </view>
 </view>
