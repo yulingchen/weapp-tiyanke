@@ -1,0 +1,64 @@
+.rank{
+  background: #fff;
+  font-size:28rpx;
+}
+.border{
+  border-top: 12rpx solid #F2F2F2;
+}
+.intelligent-wrp .intelligent{
+  width:100%;
+  border-bottom: 24rpx solid #F2F2F2;
+}
+.intelligent-wrp .intelligent .ranking{
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.intelligent-wrp .intelligent .ranking .icon{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -14rpx;
+
+}
+.intelligent-wrp .intelligent .ranking .text{
+  display: inline-block;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color:#ccc;
+}
+
+.intelligent-wrp .intelligent .info{
+  display: flex;
+  height: 180rpx;
+  justify-content: space-around;
+  align-items: center ;
+  padding: 0 5rpx;
+  border-bottom: 1px solid #F2F2F2;
+}
+.intelligent-wrp .intelligent .info .content{
+  line-height: 45rpx;
+}
+.intelligent-wrp .intelligent .info .content .name{
+  font-size:32rpx;
+  font-weight: bold;
+  color:gold;
+}
+.intelligent-wrp .intelligent .info .content .text{
+  font-size:28rpx;
+  font-weight: 500;
+  color:#000;
+}
+.intelligent-wrp .intelligent .info .content .points{
+  font-size:28rpx;
+  font-weight: 200;
+  color:#ccc;
+}
+.intelligent-wrp .intelligent .photos{
+  padding: 0 5rpx;
+}
+.intelligent-wrp .intelligent .photos ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  height: 215rpx;
+}

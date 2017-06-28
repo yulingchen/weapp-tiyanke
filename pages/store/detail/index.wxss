@@ -1,0 +1,60 @@
+.store-details {
+  font-size: 28rpx;
+  color: #666;
+}
+.store-details .header{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 40rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+}
+
+.store-details .header .left{
+  display: flex;
+}
+
+
+
+.store-details .header .left image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+
+.store-details .header .left .name{
+ font-size: 32rpx;
+ color:#333;
+ /*color: #4d5152;*/
+ /*font-weight: bold;*/
+ margin-bottom: 10rpx;
+}
+
+
+.tabs-menu{
+  display: flex;
+  border-bottom: 1px solid #eee;
+}
+.tabs-menu .item{
+  width: 50%;
+  padding: 20rpx 0;
+  text-align: center;
+}
+.tabs-menu .active{
+  color: #C81623;
+  border-bottom: 2px solid #C81623;
+}
+
+.tabs-content .list{
+  padding: 30rpx;
+  display: flex;
+}
+
+.tabs-content .list .img image{
+  width: 62px;
+  height: 62px;
+  border-radius: 4px;
+  margin-right: 15rpx;
+}

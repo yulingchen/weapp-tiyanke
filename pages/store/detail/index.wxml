@@ -1,0 +1,49 @@
+<view class="store-details">
+  <view class="header">
+    <view class="left">
+      <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
+      <view class="text">
+         <view class="name">浓农情怡鲜炖燕窝(西乡店)</view>
+         <view class="">欢迎到店体验</view>
+      </view>
+    </view>
+    <view class="right">
+      icon
+    </view>
+  </view>
+
+  <view class="main">
+    <view class="tabs-menu">
+      <view class="{{tabIndex ? 'item' : 'item active'}}" bindtap="tabChange" data-type="{{0}}">体验</view>
+      <view class="{{tabIndex ? 'item active' : 'item'}}"  bindtap="tabChange" data-type="{{1}}">资讯</view>
+    </view>
+    
+    <view class="tabs-content" wx:if="{{!tabIndex}}" >
+       <view class="list">
+          <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
+          <view class="text">
+            <view >浓浓的情谊，浓浓的咖啡</view>
+            <view>欢迎到店体验</view>
+          </view>
+       </view>
+      <view class="list">
+          <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
+          <view class="text">
+            <view >浓浓的情谊，浓浓的咖啡</view>
+            <view>欢迎到店体验</view>
+          </view>
+       </view>
+    </view>
+    
+    <view class="tabs-content" wx:else>
+      <view class="list">
+          <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
+          <view class="text">
+            <view >浓浓的情谊，浓浓的咖啡</view>
+            <view>最新资讯，一起来八卦</view>
+          </view>
+       </view>
+    </view>
+  </view>
+  
+</view>

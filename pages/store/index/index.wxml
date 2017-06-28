@@ -22,8 +22,8 @@
         <image style="width: 62px; height: 62px;" src="../../../assets/images/avatar_1.png"></image>
       </view>
       <view class="content">
-        <view class="title">
-          <text>浓农情怡鲜炖燕窝(西乡店)</text>
+        <view class="title"  >
+          <text data-title="浓农情怡鲜炖燕窝(西乡店)" bindtap="gotoDetail">浓农情怡鲜炖燕窝(西乡店)</text>
         </view>
         <view class="description">
           <image class="star" style="width: 60px; height: 11px;" src="../../../assets/images/star.png"></image>
