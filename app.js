@@ -21,6 +21,7 @@ App({
   onPullDownRefresh:function() {
     console.log('下拉刷新')
   }, 
+
   login(cb){
     wx.login({
       success: function(res) {
@@ -49,7 +50,7 @@ App({
     var self = this
     wx.checkSession({
       success: function(){
-        typeof cb == "function" && cb(true)
+        typeof cb == "function" && cb(false)
       },
       fail: function(){
         self.login(cb)
