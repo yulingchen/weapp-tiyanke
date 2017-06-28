@@ -49,7 +49,7 @@ App({
     var self = this
     wx.checkSession({
       success: function(){
-        typeof cb == "function" && cb(false)
+        typeof cb == "function" && cb(true)
       },
       fail: function(){
         self.login(cb)
