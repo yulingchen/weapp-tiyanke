@@ -26,7 +26,7 @@ App({
       success: function(res) {
         if (res.code) {
           wx.request({
-            url: 'http://m.tiyanke.com:1337/weapp/login',
+            url: 'https://m.tiyanke.com/weapp/login',
             data: {
               code: res.code
             },
@@ -67,7 +67,7 @@ App({
         success: function(res) {
           if(!isUserSave){
             wx.request({
-              url: 'http://m.tiyanke.com:1337/weapp/saveuser',
+              url: 'https://m.tiyanke.com/weapp/saveuser',
               method: 'POST',
               data: {
                 encryptedData: res.encryptedData,
