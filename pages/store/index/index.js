@@ -7,5 +7,10 @@ Page({
   },
   getMoreData:function(){
     console.log('get more');
-  }
+  },
+   gotoDetail: function (e) {
+    wx.navigateTo({
+      url: '../detail/index?title=' + e.target.dataset.title,
+    })
+  },
 })

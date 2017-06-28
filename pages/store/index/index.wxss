@@ -2,14 +2,15 @@
 .taste{
   background-color:#fff;
   font-size:12px;
+  border-top: 1px solid #eee; 
 }
 .header-wrp {
   display: flex;
   width:100%;
   height: 70rpx;
   line-height: 70rpx;
-  border-top: 1px solid #C7C9CA;
-  border-bottom: 1px solid #C7C9CA;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .header-wrp .header-item{
   flex:1;
@@ -27,7 +28,7 @@
 }
 .content-wrp{
   padding: 22rpx 22rpx 0px 16rpx ;
-  border-bottom: 1px solid #C7C9CA;
+  border-bottom: 1px solid #eee;
   display:flex;
 }
 .content-wrp .avatar{
