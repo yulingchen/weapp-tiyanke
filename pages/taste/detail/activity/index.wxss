@@ -1,67 +1,118 @@
-.usercenter{
-  background-color: #efefef;
-  min-height:100%;
-  border-top:1px solid #eee;
-  border-bottom:1px solid #eee;
-}
-.header{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff ;
-  color: #4d5152;
-  border-top:1px solid #eee;
-  border-bottom:1px solid #eee;
-  margin: 30rpx 0;
-  padding: 30rpx;
-}
-.userinfo {
-  display: flex;
-  align-items: center;
+.activity-detail-page .header image {
+  width: 100%;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
+.activity-title{
+  font-size: 32rpx;
+  padding: 20rpx;
+  line-height: 1.5;
+}
+
+.acyivity-info{
+  color: #666;
+  font-size: 28rpx;
+}
+
+.acyivity-info image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.acyivity-info image.right{
+  width: 30rpx;
+  height: 30rpx;
+}
+.acyivity-info image.icon{
   margin-right: 20rpx;
 }
 
-.userinfo-nickname {
-  color: #4d5152;
-  font-size: 30rpx;
-  
-}
-
-.usermotto {
-  margin-top: 200px;
-}
-
-.menu-item{
-  display:flex;
+.acyivity-info .item{
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff ;
-  padding: 30rpx;
-  font-size: 28rpx;
-  color: #4d5152;
-  border-top:1px solid #eee;
-  border-bottom:1px solid #eee;
-  margin: 30rpx 0;
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
 }
-.menu-item .left{
+
+.acyivity-info .item:last-of-type{
+  border-bottom: 0;
+}
+
+.acyivity-info .item .left{
   display: flex;
-  align-items:center;
-  font-size: 32rpx;
+  align-items: center;
 }
 
-.menu-item-setting{
-  width: 48rpx;
-  height: 48rpx;
-  margin-right:10rpx;
-}
-
-.right{
+.acyivity-info .standby-ticket{
   color: #999;
+}
+
+.activity-join .title,.activity-desc .title{
+  color: #999;
+  padding: 20rpx;
   font-size: 28rpx;
-  font-weight: bold;
+}
+
+.activity-join .user-list{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.activity-join .user-list .left{
+  display: flex;
+}
+
+.activity-join .user-list .left image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.activity-join .user-list .right{
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.activity-join .user-list .right image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+
+.activity-desc{
+  padding-bottom: 120rpx;
+}
+
+.activity-desc .content{
+  padding: 20rpx;
+  line-height: 1.5;
+  color: #4d5152;
+  font-size: 28rpx;
+}
+
+
+.acticity-btn-wrapper{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  padding: 20rpx 0;
+  background-color: #fff;
+  z-index: 100;
+  border-top: 1px solid #eee;
+  justify-content: flex-end ;
+}
+
+.acticity-btn-wrapper .btn{
+  background-color: #76CC14;
+  color: #fff;
+  font-size: 28rpx;
+  padding: 10rpx 40rpx;
+  border-radius: 4px;
+  margin-right: 20rpx;
 }
