@@ -9,7 +9,7 @@ Page({
   onLoad: function () {
   	var self=this
     wx.request({
-		  url: 'https://m.tiyanke.com/experience/classes', 
+		  url: 'https://m.tiyanke.com/experience/categorys', 
 		  success: function(res) {
 		    console.log(res.data)
 		    var mainCategorys = res.data.data.filter(function(category){
