@@ -3,44 +3,14 @@
 		<view class="category-large">
 			<view wx:for="{{mainCategorys}}">
 				<view class="large-title active" wx:if="{{index==mainIndex}}">{{item.name}}</view>
-				<view class="large-title" wx:else>{{item.name}}</view>
+				<view class="large-title" wx:else bindtap="getSubCategorys" data-index="{{index}}" data-id="{{item._id}}">{{item.name}}</view>
 		  </view>
 		</view>
 
 		<view class="category-small">
-			<view class="category-item" bindtap="pushActivityDetailView">
+			<view class="category-item" wx:for="{{subCategorys}}" data-id="{{item._id}}" bindtap="gotoListView">
 				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
-			</view>
-
-			<view class="category-item" bindtap="pushActivityDetailView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
-				<view class="category-small-title">产品内测</view>
+				<view class="category-small-title">{{item.name}}</view>
 			</view>
 		</view>
 	</view>
