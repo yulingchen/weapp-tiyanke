@@ -9,15 +9,12 @@ App({
 
     //登录
     if(!wx.getStorageSync('wxappSessionId')){
-      wx.showToast({
-        title: 'no wxappSessionId'
-      })
-      this.login(function(isUserSave){
-        self.getUserInfo(isUserSave)
+      this.login(function(){
+        self.getUserInfo()
       })
     }else{
-      this.checkLogin(function(isUserSave){
-        self.getUserInfo(isUserSave)
+      this.checkLogin(function(){
+        self.getUserInfo()
       })
     }
   },
@@ -37,7 +34,7 @@ App({
             },
             success: function(res) {
               wx.setStorageSync('wxappSessionId', res.data.data.sessionid)
-              typeof cb == "function" && cb(res.data.data.isSave)
+              typeof cb == "function" && cb()
             }
           })
         } else {
@@ -53,10 +50,9 @@ App({
   checkLogin(cb){
     var self = this
     let wxappSessionId = wx.getStorageSync('wxappSessionId')
-
     wx.checkSession({
       success: function(){
-        typeof cb == "function" && cb(true)
+        typeof cb == "function" && cb()
       },
       fail: function(){
         if(wxappSessionId){
@@ -67,7 +63,7 @@ App({
     })
   },
 
-  getUserInfo: function(isUserSave, cb) {
+  getUserInfo: function(cb) {
     var self = this
     if (this.globalData.userInfo) {
       typeof cb == "function" && cb(this.globalData.userInfo)
@@ -75,25 +71,23 @@ App({
       wx.getUserInfo({
         withCredentials: true,
         success: function(res) {
-          if(!isUserSave){
-            wx.request({
-              url: 'https://m.tiyanke.com/weapp/saveuser',
-              method: 'POST',
-              data: {
-                encryptedData: res.encryptedData,
-                iv: res.iv,
-                wxappSessionId: wx.getStorageSync('wxappSessionId')
-              },
-              header: {
-                'content-type': 'application/json'
-              },
-              success: function(res) {
-                if(res.statusCode==401){
-                  self.login()
-                }
+          wx.request({
+            url: 'https://m.tiyanke.com/weapp/saveuser',
+            method: 'POST',
+            data: {
+              encryptedData: res.encryptedData,
+              iv: res.iv,
+              wxappSessionId: wx.getStorageSync('wxappSessionId')
+            },
+            header: {
+              'content-type': 'application/json'
+            },
+            success: function(res) {
+              if(res.statusCode==401){
+                self.login()
               }
-            })
-          }
+            }
+          })
           
           self.globalData.userInfo = res.userInfo
           typeof cb == "function" && cb(self.globalData.userInfo)
