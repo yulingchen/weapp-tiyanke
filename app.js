@@ -9,6 +9,9 @@ App({
 
     //登录
     if(!wx.getStorageSync('wxappSessionId')){
+      wx.showToast({
+        title: 'no wxappSessionId'
+      })
       this.login(function(isUserSave){
         self.getUserInfo(isUserSave)
       })
@@ -28,6 +31,7 @@ App({
         if (res.code) {
           wx.request({
             url: 'https://m.tiyanke.com/weapp/login',
+            method: 'POST',
             data: {
               code: res.code
             },
@@ -48,11 +52,16 @@ App({
 
   checkLogin(cb){
     var self = this
+    let wxappSessionId = wx.getStorageSync('wxappSessionId')
+
     wx.checkSession({
       success: function(){
-        typeof cb == "function" && cb(false)
+        typeof cb == "function" && cb(true)
       },
       fail: function(){
+        if(wxappSessionId){
+          wx.removeStorageSync('wxappSessionId')
+        }
         self.login(cb)
       }
     })
@@ -66,17 +75,25 @@ App({
       wx.getUserInfo({
         withCredentials: true,
         success: function(res) {
-          // if(!isUserSave){
-          //   wx.request({
-          //     url: 'https://m.tiyanke.com/weapp/saveuser',
-          //     method: 'POST',
-          //     data: {
-          //       encryptedData: res.encryptedData,
-          //       iv: res.iv,
-          //       wxappSessionId: wx.getStorageSync('wxappSessionId')
-          //     }
-          //   })
-          // }
+          if(!isUserSave){
+            wx.request({
+              url: 'https://m.tiyanke.com/weapp/saveuser',
+              method: 'POST',
+              data: {
+                encryptedData: res.encryptedData,
+                iv: res.iv,
+                wxappSessionId: wx.getStorageSync('wxappSessionId')
+              },
+              header: {
+                'content-type': 'application/json'
+              },
+              success: function(res) {
+                if(res.statusCode==401){
+                  self.login()
+                }
+              }
+            })
+          }
           
           self.globalData.userInfo = res.userInfo
           typeof cb == "function" && cb(self.globalData.userInfo)
