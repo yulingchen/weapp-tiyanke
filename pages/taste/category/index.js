@@ -38,8 +38,9 @@ Page({
 
   gotoListView: function(e){
   	var categoryId = e.currentTarget.dataset.id
+  	var categoryName = e.currentTarget.dataset.name
     wx.navigateTo({
-      url: '../list/index?categoryid='+categoryId
+      url: '../list/index?categoryId='+categoryId+'&categoryName='+categoryName
     })
   }
 })
