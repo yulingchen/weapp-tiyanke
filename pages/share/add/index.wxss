@@ -1,0 +1,6 @@
+.add-share textarea{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  padding: 20rpx;
+  font-size: 28rpx;
+}

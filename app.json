@@ -9,7 +9,11 @@
     "pages/top/index/index",
     "pages/store/index/index",
     "pages/store/detail/index",
+    
     "pages/share/index/index",
+    "pages/share/add/index",
+    "pages/share/details/index",
+    
 
     "pages/my/index/index",
     "pages/my/my-share/index",
@@ -19,7 +23,7 @@
     "backgroundTextStyle":"light",
     "backgroundColor": "#E8E8ED",
     "navigationBarBackgroundColor": "#FFFFFF",
-    "enablePullDownRefresh": true,
+    "enablePullDownRefresh": false,
     "navigationBarTitleText": "体验客",
     "navigationBarTextStyle":"black"
   },

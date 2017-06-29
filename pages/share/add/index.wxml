@@ -1,0 +1,5 @@
+<view class="add-share">
+  <view class="section">
+    <textarea placeholder=""   />
+  </view>
+</view>

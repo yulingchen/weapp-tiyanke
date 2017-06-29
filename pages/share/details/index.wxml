@@ -1,0 +1,39 @@
+<!--pages/share/details/index.wxml-->
+<view class="share-details-page">
+  <view class="header">
+    <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>
+  </view>
+
+  <view class="author">
+    <view class="left">
+      <view class="avatar"><image class="userinfo-avatar" src="../../../assets/images/share_avatar.png"  background-size="cover"></image></view>
+      <view class='info'>
+        <text class="name">哒哒</text>
+        <text class="lv">1级</text>
+      </view>
+    </view>
+    <view class="right">
+      关注
+    </view>
+  </view>
+
+  
+  <view class="desc">
+     <view class="title">
+      最美的不是下雨天，而是和你躲过雨的屋檐
+     </view>
+     <view class="content">
+      天青色等烟雨，而我在等你，炊烟袅袅升起，隔江千万里
+     </view>
+    <view class="bottom">
+      <text class="time">6.21</text>
+      <text class="read-number">100阅读</text>
+    </view>
+  </view>
+
+  <view class="share-action-btn">
+    <view class="btn"><image class="userinfo-avatar" src="../../../assets/images/share/share.png"  background-size="cover"></image>分享</view>
+    <view class="btn"><image class="userinfo-avatar" src="../../../assets/images/share/like.png"  background-size="cover"></image>点赞</view>
+  </view>
+  
+</view>

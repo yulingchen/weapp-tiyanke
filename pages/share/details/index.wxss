@@ -1,0 +1,98 @@
+/* pages/share/details/index.wxss */
+
+.share-details-page{
+  font-size: 28rpx;
+}
+
+.share-details-page .header image{
+  width: 100%;
+}
+
+.share-details-page .author{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.share-details-page .author .left{
+  display: flex;
+  align-items: center;
+}
+
+.share-details-page .author .avatar image{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.share-details-page .author .name{
+  color: #ffa133;
+  margin-right: 4px;
+}
+
+.share-details-page .author .right{
+  border: 1px solid #eee;
+  border-radius: 4px;
+  min-width: 60px;
+  padding: 10rpx;
+  text-align: center;
+  color:#ffd633;
+}
+
+.share-details-page .desc {
+  padding:30rpx;
+}
+.share-details-page .desc .title{
+  font-size: 40rpx;
+  margin-bottom: 15rpx;
+}
+
+.share-details-page .desc .content{
+  line-height: 1.5;
+  color: #666;
+}
+.share-details-page .desc .bottom{
+  margin-top: 10rpx;
+  line-height: 1.5;
+  color: #999;
+}
+
+.share-details-page .desc .bottom .time{
+  margin-right: 10rpx;
+}
+
+.share-action-btn{
+  width: 100%;
+  position: fixed;
+  padding: 20rpx;
+  border-top: 1px solid #eee;
+  display: flex;
+  z-index: 100;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.share-action-btn .btn{
+  color: #666;
+  width: 50%;
+  border-right: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.share-action-btn .btn image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.share-action-btn .btn:last-of-type{
+  border-right: none;
+}
+
+
+

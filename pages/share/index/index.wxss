@@ -26,6 +26,7 @@
 .content-wrp{
   padding: 14px 11px 9px 11px;
   border-bottom: 1px solid #ccc;
+  display: flex;
 }
 .content-wrp .avatar{
   display: inline-block;
@@ -51,6 +52,9 @@
 .content-wrp .content .img-decription{
   margin-bottom: 13px;
 }
+.content-wrp .content .img-decription image{
+  width: 250px;
+}
 .content-wrp .content .state{
   color:#fff;
 }
@@ -62,4 +66,16 @@
 .content-wrp .content .state image{
   display: inline-block;
   margin-left: 250px;
+}
+
+.fixed-action{
+  position: fixed;
+  z-index: 100;
+  right: 20rpx;
+  bottom: 40rpx;
+}
+
+.fixed-action image{
+  width: 150rpx;
+  height: 150rpx;
 }
