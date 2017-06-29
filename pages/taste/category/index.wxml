@@ -9,7 +9,7 @@
 
 		<view class="category-small">
 			<view class="category-item" wx:for="{{subCategorys}}" data-id="{{item._id}}" bindtap="gotoListView">
-				<view class="category-cover"><image src="../../../assets/images/category.png"></image></view>
+				<view class="category-cover"><image src="{{item.imageUrl}}"></image></view>
 				<view class="category-small-title">{{item.name}}</view>
 			</view>
 		</view>
