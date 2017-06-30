@@ -1,3 +1,5 @@
+@import "../../../../assets/wxParse/wxParse.wxss";
+
 .activity-detail-page .header image {
   width: 100%;
 }
