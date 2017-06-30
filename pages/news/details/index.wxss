@@ -18,25 +18,28 @@
 .content-wrp .content .title .avatar{
   width:106rpx;
   height:106rpx;
+  margin-right: 10rpx;
+}
+.content-wrp .content .title .avatar image{
+  border-radius: 50%;
 }
 .content-wrp .content .title .description{
   line-height: 50rpx;
 }
 .content-wrp .content .title .description .author{
   font-size:28rpx;
-  color:#F46200;
+  color:#ffb957;
 }
 .content-wrp .content .title .description .time{
   font-size:26rpx;
-  font-weight: bold;
-  color:#ccc;
+  color:#999;
 }
 .content-wrp .content .title .attention{
   width:64rpx;
   height: 64rpx;
 }
 .content-wrp .content .text{
-  line-height: 50rpx;
+  line-height: 1.6;
   font-size: 30rpx;
   color:#000;
 }
@@ -98,6 +101,9 @@
   padding-left: 20rpx;
   padding-right: 20rpx;
 }
+.comment-list .user-avatar image{
+  border-radius: 50%;
+}
 .comment-list .comment-content{
   flex: 1;
 }
@@ -119,9 +125,21 @@
 }
 
 .comment-list .comment-content .header .right{
-  padding: 20rpx;
+  padding-right: 20rpx;
   color: #999;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
 }
+
+.comment-list .comment-content .header .right text{
+  margin-right: 15rpx;
+}
+.comment-list .comment-content .header .right image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
 
 .comment-list .comment-content .main{
   margin-top: 20rpx;

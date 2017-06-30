@@ -22,13 +22,13 @@
       </view>
       <view class="state">
         <text class="text">昨天</text>
-        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
+        <image style="width: 20px; height: 20px;" src="../../../assets/images/comment.png"></image>
       </view>
     </view>
   </view>
   
 
   <view class="fixed-action" bindtap="publishShare">
-    <image src="../../../assets/images/share/icon-fatie.png" background-size="cover"  ></image>
+    <image src="../../../assets/images/icon-fatie.png" background-size="cover"  ></image>
   </view>
 </view>

@@ -10,6 +10,7 @@
   border-bottom: 24rpx solid #F2F2F2;
 }
 .intelligent-wrp .intelligent .ranking{
+  padding: 20rpx 0;
   border-bottom: 1px solid #F2F2F2;
 }
 
@@ -21,44 +22,45 @@
 }
 .intelligent-wrp .intelligent .ranking .text{
   display: inline-block;
-  line-height: 70rpx;
-  font-size: 28rpx;
-  font-weight: bold;
-  color:#ccc;
+  border-left: 3px solid #ffb957;
+  padding-left: 15rpx;
+  color: #333;
 }
 
 .intelligent-wrp .intelligent .info{
   display: flex;
-  height: 180rpx;
-  justify-content: space-around;
+  padding: 20rpx;
+  justify-content: space-between;
   align-items: center ;
-  padding: 0 5rpx;
   border-bottom: 1px solid #F2F2F2;
 }
+
+.intelligent-wrp .intelligent .info .avatar image{
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+
 .intelligent-wrp .intelligent .info .content{
-  line-height: 45rpx;
+  color: #999;
+  line-height: 1.6;
 }
 .intelligent-wrp .intelligent .info .content .name{
   font-size:32rpx;
-  font-weight: bold;
-  color:gold;
+  color: #ffb957;
 }
-.intelligent-wrp .intelligent .info .content .text{
-  font-size:28rpx;
-  font-weight: 500;
-  color:#000;
+.intelligent-wrp .intelligent .info .content .view{
+  color: #666;
 }
-.intelligent-wrp .intelligent .info .content .points{
-  font-size:28rpx;
-  font-weight: 200;
-  color:#ccc;
+
+.intelligent-wrp .intelligent .info  .left{
+  display: flex;
 }
+
 .intelligent-wrp .intelligent .photos{
-  padding: 0 5rpx;
+  padding: 20rpx;
 }
 .intelligent-wrp .intelligent .photos ul{
   display: flex;
   justify-content: space-around;
   align-items: center ;
-  height: 215rpx;
 }

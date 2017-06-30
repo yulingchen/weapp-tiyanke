@@ -13,18 +13,18 @@
   <view class="menu-container">
     <view class="menu-item" bindtap="gotoMyTaste" >
       <view class="left" >
-        <image src="../../../assets/images/my/taste.png" class="menu-item-icon" background-size="cover"></image>
+        <image src="../../../assets/images/taste.png" class="menu-item-icon" background-size="cover"></image>
         <text>我的体验</text>
       </view>
-      <view class="right"> <image src="../../../assets/images/my/right.png"  background-size="cover"></image></view>
+      <view class="right"> <image src="../../../assets/images/right.png"  background-size="cover"></image></view>
     </view>
 
     <view class="menu-item" bindtap="gotoMyShare">
       <view class="left" >
-        <image src="../../../assets/images/my/share.png" class="menu-item-icon" background-size="cover"></image>
+        <image src="../../../assets/images/me-share.png" class="menu-item-icon" background-size="cover"></image>
         <text>我的分享</text>
       </view>
-      <view class="right"> <image src="../../../assets/images/my/right.png"  background-size="cover"></image></view>
+      <view class="right"> <image src="../../../assets/images/right.png"  background-size="cover"></image></view>
     </view>
   </view>
 

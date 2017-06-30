@@ -32,8 +32,8 @@
   </view>
 
   <view class="share-action-btn">
-    <view class="btn"><image class="userinfo-avatar" src="../../../assets/images/share/share.png"  background-size="cover"></image>分享</view>
-    <view class="btn"><image class="userinfo-avatar" src="../../../assets/images/share/like.png"  background-size="cover"></image>点赞</view>
+    <view class="btn"><image  src="../../../assets/images/share.png"  background-size="cover"></image>分享</view>
+    <view class="btn"><image  src="../../../assets/images/like.png"  background-size="cover"></image>点赞</view>
   </view>
   
 </view>

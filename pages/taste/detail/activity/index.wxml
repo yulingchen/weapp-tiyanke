@@ -14,22 +14,22 @@
     <view class="acyivity-info">
       <view class="activity-time item">
         <view class="left">
-          <image class="icon" src="../../../../assets/images/detail/time.png" background-size="cover"/> 
+          <image class="icon" src="../../../../assets/images/time.png" background-size="cover"/> 
           <text>2017-07-01 09:30~11:30</text>
         </view>
       </view>
 
       <view class="activity-address item">
         <view class="flex-wrap left">
-          <image class="icon" src="../../../../assets/images/detail/address.png" background-size="cover" />
+          <image class="icon" src="../../../../assets/images/address.png" background-size="cover" />
           <text>广东-深圳市-南山区高新科技园南区南新南一道中科大厦24层</text>
         </view>
-        <image src="../../../../assets/images/my/right.png" class="right"></image>
+        <image src="../../../../assets/images/right.png" class="right"></image>
       </view>
 
       <view class="activity-limit item">
         <view class="left">
-         <image class="icon" src="../../../../assets/images/detail/ticket.png" background-size="cover"/>
+         <image class="icon" src="../../../../assets/images/ticket.png" background-size="cover"/>
          <text>免费（没人限报一次）</text>
         </view>
         <text class="standby-ticket">余票： 36</text>
@@ -47,7 +47,7 @@
            <image src="../../../../assets/images/share_avatar.png" />
             <image src="../../../../assets/images/share_avatar.png" />
         </view>
-        <view class="right">14<image src="../../../../assets/images/my/right.png" ></image></view>
+        <view class="right">14<image src="../../../../assets/images/right.png" ></image></view>
       </view>
     </view>
 

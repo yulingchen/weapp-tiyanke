@@ -53,6 +53,8 @@
 .content-wrp .content .description .star{
   margin-right: 10rpx;
   vertical-align: top;
+  width: 30rpx;
+  height: 30rpx;
 }
 .content-wrp .content .description .text{
   margin-right: 5px;

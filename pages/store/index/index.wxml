@@ -1,3 +1,4 @@
+
 <view class="taste">
   <!--header部分开始-->
   <!--<view class="header-wrp" style="flex-direction:row;">
@@ -26,7 +27,7 @@
           <text data-title="浓农情怡鲜炖燕窝(西乡店)" bindtap="gotoDetail">浓农情怡鲜炖燕窝(西乡店)</text>
         </view>
         <view class="description">
-          <image class="star" style="width: 60px; height: 11px;" src="../../../assets/images/star.png"></image>
+          <image class="star" src="../../../assets/images/star-full.png"></image>
           <text class="text">月销5笔</text>
         </view>
         <view class="price-distance">
