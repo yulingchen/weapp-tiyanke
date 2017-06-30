@@ -19,14 +19,7 @@
     </view>
     
     <view class="tabs-content" wx:if="{{!tabIndex}}" >
-       <view class="list">
-          <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
-          <view class="text">
-            <view >浓浓的情谊，浓浓的咖啡</view>
-            <view>欢迎到店体验</view>
-          </view>
-       </view>
-      <view class="list">
+       <view class="list"  wx:for="{{list}}" wx:for-item="item">
           <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
           <view class="text">
             <view >浓浓的情谊，浓浓的咖啡</view>
@@ -36,7 +29,7 @@
     </view>
     
     <view class="tabs-content" wx:else>
-      <view class="list">
+      <view class="list" wx:for="{{newsList}}" wx:for-item="item">
           <view class="img"><image src="../../../assets/images/avatar_1.png" background-size="cover"></image></view>
           <view class="text">
             <view >浓浓的情谊，浓浓的咖啡</view>

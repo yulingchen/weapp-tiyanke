@@ -6,6 +6,8 @@
     "pages/taste/detail/activity/index",
 
     "pages/news/index/index",
+    "pages/news/details/index",
+    
     "pages/top/index/index",
     "pages/store/index/index",
     "pages/store/detail/index",

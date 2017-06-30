@@ -2,4 +2,5 @@
   <view class="section">
     <textarea placeholder=""   />
   </view>
+  <view class="btn" bindtap="publish">发表</view>
 </view>

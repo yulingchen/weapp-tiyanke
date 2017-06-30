@@ -1,3 +1,5 @@
 {
-  "navigationBarTitleText": "发表分享"
+  "navigationBarTitleText": "发表分享",
+    "navigationBarBackgroundColor": "#C81623",
+    "navigationBarTextStyle": "white"
 }

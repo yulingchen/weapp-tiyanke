@@ -3,4 +3,7 @@ Page({
     console.log('onLoad')
     
   },
+  publish(){
+    console.log('发表')
+  },
 })

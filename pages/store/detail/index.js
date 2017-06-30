@@ -1,6 +1,8 @@
 Page({
   data:{
     tabIndex: 1,
+    list:[1,2],
+    newsList:[1,2,3],
   },
   onLoad: function (e) {
     console.log('onLoad')

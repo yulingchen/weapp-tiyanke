@@ -1,0 +1,130 @@
+/* pages/news/details/index.wxss */
+
+.news{
+  background-color: #fff;
+}
+.content-wrp{
+  border-top: 24rpx solid #ccc;
+}
+.content-wrp .content{
+  width:90%;
+  padding: 26rpx; 
+}
+.content-wrp .content .title{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.content-wrp .content .title .avatar{
+  width:106rpx;
+  height:106rpx;
+}
+.content-wrp .content .title .description{
+  line-height: 50rpx;
+}
+.content-wrp .content .title .description .author{
+  font-size:28rpx;
+  color:#F46200;
+}
+.content-wrp .content .title .description .time{
+  font-size:26rpx;
+  font-weight: bold;
+  color:#ccc;
+}
+.content-wrp .content .title .attention{
+  width:64rpx;
+  height: 64rpx;
+}
+.content-wrp .content .text{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color:#000;
+}
+.content-wrp .content .nav image{
+  vertical-align: middle;
+}
+.content-wrp .content .nav .text{
+  line-height: 50rpx;
+  font-size: 30rpx;
+  color:#507DAF;
+}
+
+
+.news-details-btn{
+  font-size: 28rpx;
+  width: 100%;
+  position: fixed;
+  padding: 20rpx;
+  border-top: 1px solid #eee;
+  display: flex;
+  z-index: 100;
+  bottom: 0;
+  background-color: #f9f9f9;
+}
+
+.news-details-btn .btn{
+  color: #666;
+  width: 50%;
+  border-right: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.news-details-btn .btn image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.news-details-btn .btn:last-of-type{
+  border-right: none;
+}
+
+.news-details{
+  padding-bottom: 50px;
+  margin-bottom: 20rpx;
+}
+
+
+.comment-list{
+  font-size: 28rpx;
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.comment-list .user-avatar{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.comment-list .comment-content{
+  flex: 1;
+}
+.comment-list .comment-content .header{
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+}
+
+.comment-list .comment-content .header .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.comment-list .comment-content .header .time{
+ color: #999;
+ margin-top: 10rpx;
+}
+
+.comment-list .comment-content .header .right{
+  padding: 20rpx;
+  color: #999;
+}
+
+.comment-list .comment-content .main{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #eee;
+}

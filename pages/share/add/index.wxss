@@ -4,3 +4,15 @@
   padding: 20rpx;
   font-size: 28rpx;
 }
+
+.btn{
+  margin: 20rpx;
+  font-size: 28rpx;
+  width: 60px;
+  line-height: 28px;
+  border-radius: 4px;
+  text-align: center;
+  float: right;
+  color: #fff;
+  background-color: #ff575f;
+}

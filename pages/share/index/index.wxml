@@ -10,7 +10,7 @@
   </view>
   <!--header部分结束-->
   <!--content部分开始-->
-  <view class="content-wrp">
+  <view class="content-wrp" wx:for="{{list}}" wx:for-item="item">
     <view class="avatar">
       <image style="width: 38px; height: 38px;" src="../../../assets/images/share_avatar.png"></image>
     </view>
@@ -26,45 +26,9 @@
       </view>
     </view>
   </view>
-  <!--content部分结束-->
-    <!--content部分开始-->
-  <view class="content-wrp">
-    <view class="avatar">
-      <image style="width: 38px; height: 38px;" src="../../../assets/images/share_avatar.png"></image>
-    </view>
-    <view class="content">
-      <text class="author">肖小姑</text>
-      <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
-      <view class="img-decription">
-        <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>
-      </view>
-      <view class="state">
-        <text class="text">昨天</text>
-        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
-      </view>
-    </view>
-  </view>
-  <!--content部分结束-->
-    <!--content部分开始-->
-  <view class="content-wrp">
-    <view class="avatar">
-      <image style="width: 38px; height: 38px;" src="../../../assets/images/share_avatar.png"></image>
-    </view>
-    <view class="content">
-      <text class="author">肖小姑</text>
-      <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
-      <view class="img-decription">
-        <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>
-      </view>
-      <view class="state">
-        <text class="text">昨天</text>
-        <image style="width: 20px; height: 12px;" src="../../../assets/images/share_author_info.png"></image>
-      </view>
-    </view>
-  </view>
-  <!--content部分结束-->
+  
 
   <view class="fixed-action" bindtap="publishShare">
-    <image src="../../../../assets/images/share/icon-fatie.png" background-size="cover"  ></image>
+    <image src="../../../assets/images/share/icon-fatie.png" background-size="cover"  ></image>
   </view>
 </view>
