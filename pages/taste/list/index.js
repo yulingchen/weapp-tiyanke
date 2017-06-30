@@ -22,9 +22,17 @@ Page({
 		})
   },
 
-  pushActivityDetailView: function(){
+  gotoDetailView: function(e){
+  	var projectId = e.currentTarget.dataset.id
+  	var projectType = e.currentTarget.dataset.type
+
+  	var url = '';
+  	if(projectType==1){ //项目类型为活动
+  		url = '../detail/activity/index'
+  	}
+
     wx.navigateTo({
-      url: '../detail/activity/index'
+      url: url + '?projectId='+ projectId
     })
   }
 })

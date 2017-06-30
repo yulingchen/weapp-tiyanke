@@ -2,11 +2,11 @@
   <view class="activity-detail-page">
 
     <view class="header">
-      <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>
+      <image src="{{project.coverUrl}}"></image>
     </view>
 
     <view class="activity-title">
-      <text>感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你</text>
+      <text>{{project.title}}</text>
     </view>
 
     <view class="division-20"></view>
@@ -15,24 +15,24 @@
       <view class="activity-time item">
         <view class="left">
           <image class="icon" src="../../../../assets/images/detail/time.png" background-size="cover"/> 
-          <text>2017-07-01 09:30~11:30</text>
+          <text>{{project.startDateTime}} - {{project.endDateTime}}</text>
         </view>
       </view>
 
       <view class="activity-address item">
         <view class="flex-wrap left">
           <image class="icon" src="../../../../assets/images/detail/address.png" background-size="cover" />
-          <text>广东-深圳市-南山区高新科技园南区南新南一道中科大厦24层</text>
+          <text>{{project.province}}-{{project.city}}-{{project.district}}-{{project.address}}</text>
         </view>
-        <image src="../../../../assets/images/my/right.png" class="right"></image>
+        <!--<image src="../../../../assets/images/my/right.png" class="right"></image>-->
       </view>
 
       <view class="activity-limit item">
         <view class="left">
          <image class="icon" src="../../../../assets/images/detail/ticket.png" background-size="cover"/>
-         <text>免费（没人限报一次）</text>
+         <text>{{project.price}}</text>
         </view>
-        <text class="standby-ticket">余票： 36</text>
+        <text class="standby-ticket">余票: {{project.limit}}</text>
       </view>
     </view>
 
@@ -55,11 +55,10 @@
 
     <view class="activity-desc">
       <view class="title">活动介绍</view>
+
+      <import src="../../../../assets/wxParse/wxParse.wxml"/>
       <view class="content">
-         感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你
-         感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你
-         感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你
-         感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你感受前沿技术，激发创意灵感--明源云第二季黑客马拉松邀请你
+        <template is="wxParse" data="{{wxParseData:detail.nodes}}"/>
       </view>
     </view>
 
