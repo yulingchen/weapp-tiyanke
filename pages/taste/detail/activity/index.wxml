@@ -63,7 +63,7 @@
     </view>
 
     <view class="acticity-btn-wrapper">
-      <view class="btn">立即报名</view>
+      <view class="btn" data-projectid="{{project._id}}" bindtap="enrollExp">立即报名</view>
     </view>
 
   </view>
