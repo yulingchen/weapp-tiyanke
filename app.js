@@ -71,23 +71,26 @@ App({
       wx.getUserInfo({
         withCredentials: true,
         success: function(res) {
-          wx.request({
-            url: 'https://m.tiyanke.com/weapp/saveuser',
-            method: 'POST',
-            data: {
-              encryptedData: res.encryptedData,
-              iv: res.iv,
-              wxappSessionId: wx.getStorageSync('wxappSessionId')
-            },
-            header: {
-              'content-type': 'application/json'
-            },
-            success: function(res) {
-              if(res.statusCode==401){
-                self.login()
+          
+          (function saveuser(){
+            wx.request({
+              url: 'https://m.tiyanke.com/weapp/saveuser',
+              method: 'POST',
+              data: {
+                encryptedData: res.encryptedData,
+                iv: res.iv,
+                wxappSessionId: wx.getStorageSync('wxappSessionId')
+              },
+              header: {
+                'content-type': 'application/json'
+              },
+              success: function(res) {
+                if(res.statusCode==401){
+                  self.login(saveuser)
+                }
               }
-            }
-          })
+            })
+          })()
           
           self.globalData.userInfo = res.userInfo
           typeof cb == "function" && cb(self.globalData.userInfo)
