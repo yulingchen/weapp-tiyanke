@@ -35,6 +35,7 @@
 }
 .content-wrp .content{
   display: inline-block;
+  flex: 1;
 }
 .content-wrp .content .author{
   display: inline-block;
@@ -59,7 +60,7 @@
   width: 250px;
 }*/
 .content-wrp .content .img-decription .img1{
-  width: 50%;
+  width: 48%;
   margin-right: 10rpx;
   height: 120px
 }

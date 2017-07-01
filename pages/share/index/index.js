@@ -6,6 +6,15 @@ Page({
     reports:[],
     userInfo: {}
   },
+  previewImage: function (e) {
+    var that = this,
+      index = e.currentTarget.dataset.imgindex,
+      pictures = e.currentTarget.dataset.pictures;
+    wx.previewImage({
+      current: pictures[index],
+      urls: pictures
+    })
+  },
   onLoad: function () {
     var self=this
     this.setData({
