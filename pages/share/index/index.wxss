@@ -52,8 +52,21 @@
 .content-wrp .content .img-decription{
   margin-bottom: 13px;
 }
-.content-wrp .content .img-decription image{
+/*.content-wrp .content .img-decription image{
   width: 250px;
+}*/
+/*.content-wrp .content .img-decription .img{
+  width: 250px;
+}*/
+.content-wrp .content .img-decription .img1{
+  width: 50%;
+  margin-right: 10rpx;
+  height: 120px
+}
+.content-wrp .content .img-decription .img3{
+  width: 30%;
+  margin-right: 10rpx;
+  height: 80px;
 }
 .content-wrp .content .state{
   color:#fff;

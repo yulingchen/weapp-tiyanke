@@ -2,7 +2,8 @@
   <!--header部分开始-->
   <view class="header clearfix">
     <view class="banner">
-      <image style="width: 100%; height: 245px;" src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>  
+      
+      <image style="width: 100%; height: 245px;" src="../../../assets/images/share_bg.png"></image>  
     </view>
     <view class="avatar">
       <image style="width: 76px; height: 76px;" src="../../../assets/images/share_avatar.png"></image>
@@ -18,7 +19,9 @@
       <text class="author">肖小姑</text>
       <view class="decription">吃饱散步，在家呆的快发霉了 ^O^ ^O^ </view>
       <view class="img-decription">
-        <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480"></image>
+        <block  wx:for="{{item.img}}" wx:for-item="img">
+           <image src="{{img}}" class="{{'img img'+(item.img.length>=3?'3':'1')}}"></image>
+        </block>
       </view>
       <view class="state">
         <text class="text">昨天</text>

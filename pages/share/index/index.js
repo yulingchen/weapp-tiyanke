@@ -1,6 +1,15 @@
 Page({
   data:{
-    list:[1,2,3]
+    list:[
+      {
+        id:1,
+        img:[
+          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480',
+          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480',
+          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480'
+        ]
+      }
+    ]
   },
   onLoad: function () {
     console.log('onLoad')
