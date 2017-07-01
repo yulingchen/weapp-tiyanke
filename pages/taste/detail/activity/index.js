@@ -1,9 +1,11 @@
 var WxParse = require('../../../../assets/wxParse/wxParse.js');
+var util = require('../../../../utils/util.js')
 var app = getApp();
 
 Page({
 	data:{
-		project:{}
+		project:{},
+    users:[]
 	},
   onLoad: function (option) {
   	var self = this;
@@ -13,14 +15,19 @@ Page({
 		  	projectId: option.projectId
 		  },
 		  success: function(res) {
-		  	var project = res.data.data
+		  	var project = res.data.data.project
+        var users = res.data.data.users
+
+        project.startDateTime = util.formatTime(new Date(project.startDateTime))
+        project.endDateTime = util.formatTime(new Date(project.endDateTime))
 		  	wx.setNavigationBarTitle({
 				  title: project && project.title
 				})
 
 				WxParse.wxParse('detail', 'html', project.content, self, 5);
 		    self.setData({
-		    	project: project
+		    	project: project,
+          users: users
 		    })
 		  }
 		})

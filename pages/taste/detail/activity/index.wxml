@@ -30,24 +30,21 @@
       <view class="activity-limit item">
         <view class="left">
          <image class="icon" src="../../../../assets/images/ticket.png" background-size="cover"/>
-         <text>{{project.price}}</text>
+         <text>{{project.price=='0' ? '免费' : project.price}}</text>
         </view>
-        <text class="standby-ticket">余票: {{project.limit}}</text>
+        <text class="standby-ticket">剩余名额: {{project.limit-users.length}}</text>
       </view>
     </view>
 
     <view class="division-20"></view>
 
     <view class="activity-join">
-      <view class="title">已售票数</view>
+      <view class="title">已报名</view>
       <view class="user-list">
         <view class="left">
-           <image src="../../../../assets/images/share_avatar.png" />
-           <image src="../../../../assets/images/share_avatar.png" />
-           <image src="../../../../assets/images/share_avatar.png" />
-            <image src="../../../../assets/images/share_avatar.png" />
+           <image wx:for="{{users}}" src="{{item.avatarUrl}}" />
         </view>
-        <view class="right">14<image src="../../../../assets/images/right.png" ></image></view>
+        <view class="right">{{users.length}}<!--<image src="../../../../assets/images/right.png" ></image>--></view>
       </view>
     </view>
 
