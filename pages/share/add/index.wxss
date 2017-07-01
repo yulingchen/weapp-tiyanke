@@ -29,7 +29,7 @@
   text-align: center;
   float: right;
   color: #fff;
-  background-color: #ff575f;
+  background-color: #C81623;
   margin-top: 40rpx;
 }
 
