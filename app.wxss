@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import "./assets/weui/weui.wxss";
+
 page{
   height: 100%;
 }
@@ -52,4 +54,6 @@ page{
   height: 20rpx;
   background-color: #eee;
 }
+
+
 

@@ -1,8 +1,12 @@
 .add-share textarea{
   width: 100%;
-  border-bottom: 1px solid #eee;
   padding: 20rpx;
   font-size: 28rpx;
+}
+
+.upload-container{
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
 }
 
 .btn{
@@ -15,4 +19,26 @@
   float: right;
   color: #fff;
   background-color: #ff575f;
+  margin-top: 40rpx;
+}
+
+.address{
+  font-size: 28rpx;
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address .left {
+  display: flex;
+  align-items: center;
+}
+
+.address .left image,.address .right{
+  width: 40rpx;
+  height: 40rpx;
+}
+.address .left image{
+  margin-right: 15rpx;
 }
