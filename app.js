@@ -10,11 +10,15 @@ App({
     //登录
     if(!wx.getStorageSync('wxappSessionId')){
       this.login(function(){
-        self.getUserInfo()
+        self.getUserInfo(function(){
+          self.collectDevice()
+        })
       })
     }else{
       this.checkLogin(function(){
-        self.getUserInfo()
+        self.getUserInfo(function(){
+          self.collectDevice()
+        })
       })
     }
   },
@@ -97,5 +101,30 @@ App({
         }
       })
     }
+  },
+
+  collectDevice: function(){
+    var device = wx.getSystemInfoSync();
+
+    (function savedevice(){
+      wx.request({
+        url: 'https://m.tiyanke.com/experience/skill/collect',
+        method: 'POST',
+        data: {
+          wxappSessionId: wx.getStorageSync('wxappSessionId'),
+          origin: 'device',
+          model: device.model,
+          system: device.system
+        },
+        header: {
+          'content-type': 'application/json'
+        },
+        success: function(res) {
+          if(res.statusCode==401){
+            self.login(savedevice)
+          }
+        }
+      })
+    })()
   }
 })
