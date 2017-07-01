@@ -12,18 +12,27 @@ Page({
     })
   },
 
+  // 跳转到新手任务页面
+  pushTaskView: function(){
+    wx.navigateTo({
+      url: '../../task/index/index'
+    })
+  },
+
   // 跳转到体验店页面
   pushStoreView: function(){
-    wx.navigateTo({
-      url: '../../store/index/index'
-    })
+    // wx.navigateTo({
+    //   url: '../../store/index/index'
+    // })
+    wx.showToast({title: '功能开发中'})
   },
 
   // 跳转到资讯页面
   pushNewsView: function(){
-    wx.navigateTo({
-      url: '../../news/index/index'
-    })
+    // wx.navigateTo({
+    //   url: '../../news/index/index'
+    // })
+    wx.showToast({title: '功能开发中'})
   },
 
   // 跳转到体验分类页面
