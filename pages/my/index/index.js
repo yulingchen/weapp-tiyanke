@@ -17,8 +17,11 @@ Page({
       url: '../my-taste/index'
     })
   },
-  tapName: function (event) {
-    console.log(event)
+ 
+  gotoTasteLincense: function () {
+    wx.navigateTo({
+      url: '../taste-lincense/index'
+    })
   },
 
   onLoad: function () {

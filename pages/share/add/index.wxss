@@ -1,19 +1,30 @@
+.add-share{
+  background-color: #eee;
+  min-height: 100%;
+}
+
+.add-share .weui-cells__title{
+  margin-top: 0;
+  padding-top: 20rpx;
+}
 .add-share textarea{
   width: 100%;
   padding: 20rpx;
   font-size: 28rpx;
+  background-color: #fff;
 }
 
 .upload-container{
   padding: 20rpx;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
 .btn{
   margin: 20rpx;
   font-size: 28rpx;
-  width: 60px;
-  line-height: 28px;
+  width: 100px;
+  line-height: 30px;
   border-radius: 4px;
   text-align: center;
   float: right;

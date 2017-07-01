@@ -28,4 +28,15 @@
     </view>
   </view>
 
+
+  <view class="menu-container">
+    <view class="menu-item" bindtap="gotoTasteLincense">
+      <view class="left" >
+        <image style="width: 40rpx;height: 40rpx;"   src="../../../assets/images/license.png" class="menu-item-icon" background-size="cover"></image>
+        <text>体验执照</text>
+      </view>
+      <view class="right"> <image src="../../../assets/images/right.png"  background-size="cover"></image></view>
+    </view>
+  </view>
+  
 </view>
