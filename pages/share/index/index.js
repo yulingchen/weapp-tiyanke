@@ -24,12 +24,12 @@ Page({
       }
     })
   },
-  gotoDetails(e){
-    let data = e.target.dataset
-    wx.navigateTo({
-      url: '../details/index',
-    })
-  },
+  // gotoDetails(e){
+  //   let data = e.target.dataset
+  //   wx.navigateTo({
+  //     url: '../details/index',
+  //   })
+  // },
   publishShare(){
     wx.navigateTo({
       url: '../add/index',
