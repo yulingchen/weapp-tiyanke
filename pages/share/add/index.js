@@ -55,9 +55,16 @@ Page({
 
   publish(e){
     var self = this;
-    var projectId = this.data.list.find(project=>!!project.checked).value;
+
+    var checkedProject = this.data.list.find(project=>!!project.checked)
+    var projectId = checkedProject && checkedProject.value
     var report_text = e.detail.value.report_text;
     var report_photos=[];
+
+    if(!projectId){
+      wx.showToast({title: '请先参与体验后才能分享哦'})
+      return;
+    }
 
     if(!report_text){
       wx.showToast({title: '请输入分享的内容'})
