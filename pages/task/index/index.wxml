@@ -1,11 +1,16 @@
 <!--pages/my/taste-lincense/index.wxml-->
 <view class="lincense-page">
   <view class="my-lincense">
-    <view class="header"> 我的执照</view>
+    <view class="header">解锁技能</view>
     <view class="main"> 
       <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
-        <view class="list" wx:for="{{list}}" wx:for-item="item" bindtap="gotoLincenseForm" data-id="{{item.id}}">
-          <image src="../../../assets/images/fx-active.png"></image>
+        <!--<view class="list" wx:for="{{list}}" wx:for-item="item" bindtap="gotoLincenseForm" data-id="{{item.id}}">
+          <image src="../../../assets/images/skill/{{item.icon}}.png"></image>
+          <view class="name">{{item.name}}</view>
+        </view>-->
+
+        <view class="list" wx:for="{{skills}}" wx:for-item="item" wx:if="{{!item.locked}}">
+          <image src="../../../assets/images/skill/{{item.icon}}.png"></image>
           <view class="name">{{item.name}}</view>  
         </view>
       </scroll-view>
@@ -15,7 +20,7 @@
   <view class="division-20"></view>
 
   <view class="lincense-category">
-    <view class="header" style="border: 0;">全部执照</view>
+    <view class="header" style="border: 0;">未解锁技能<text style="color:#999">(点击解锁)</text></view>
     <view class="weui-grids">
         <block wx:for-items="{{allList}}" wx:key="{{index}}">
             <navigator url="{{'../taste-lincense-form/index?id='+item.id}}" class="weui-grid" hover-class="weui-grid_active">

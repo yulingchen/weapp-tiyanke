@@ -1,141 +1,63 @@
-// pages/my/taste-lincense/index.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-    list:[
+    skills:[
       {
-        id: 1,
-        name: '样板房',
+        name: '安卓App测试',
+        icon:'android',
+        locked: true
       },
       {
-        id: 2,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '样板房',
-      },
-      {
-        id: 2,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '样板房',
-      },
-      {
-        id: 2,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '样板房',
-      },
-      {
-        id: 2,
-        name: '试吃',
-      },
-    ],
-    allList: [
-      {
-        id: 1,
-        name: '试房',
-      },
-      {
-        id: 3,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '试房',
-      },
-      {
-        id: 3,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '试房',
-      },
-      {
-        id: 3,
-        name: '试吃',
-      },
-      {
-        id: 1,
-        name: '试房',
-      },
-      {
-        id: 3,
-        name: '试吃',
-      },
-    ],
-     
+        name: '苹果App测试',
+        icon:'iphone',
+        locked: true
+      }
+    ]
   },
 
-  gotoLincenseForm(e){
-    let data = e.currentTarget.dataset
-    wx.navigateTo({
-      url: '../done/index?id='+data.id,
-    })
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-  
-  },
+    var self = this;
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-  
-  },
+    (function getSkill(){
+      wx.request({
+        url: 'https://m.tiyanke.com/experience/skill/info', 
+        method: 'POST',
+        data:{
+          wxappSessionId: wx.getStorageSync('wxappSessionId')
+        },
+        success: function(res) {
+          if(res.statusCode==401){
+            app.login(getSkill)
+            return;
+          }
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-  
-  },
+          var skillInfo = res.data.data;
+          var skills;
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-  
-  },
+          if(skillInfo.model){
+            if(skillInfo.system.toLowerCase().indexOf('android')>-1){
+              skills = self.data.skills.map(skill=>{
+                if(skill.name=='安卓App测试'){
+                  skill.locked=false
+                }
+                return skill
+              })
+            }
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-  
-  },
+            if(skillInfo.system.toLowerCase().indexOf('ios')>-1){
+              skills = self.data.skills.map(skill=>{
+                if(skill.name=='苹果App测试'){
+                  skill.locked=false
+                }
+                return skill
+              })
+            }
+          }
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+          self.setData({
+            skills: skills
+          })
+        }
+      })
+    })()
   }
 })

@@ -15,19 +15,20 @@
   background-color: #fff;
 }
 .my-lincense .main{
-  padding: 20rpx 0;
+  padding: 20rpx;
 }
 .my-lincense .main .list{
   display: inline-block;
-  width: 25%;
   text-align: center;
   color: #666;
+  margin-right:20rpx;
+}
+.my-lincense .main .list .name{
+  font-size:12px;
 }
 .my-lincense .main .list image{
-  width: 100rpx;
-  height: 100rpx;
-  border-radius: 50%;
-  margin-bottom: 5rpx;
+  width: 60rpx;
+  height: 60rpx;
 }
 
 .lincense-category{
