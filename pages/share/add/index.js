@@ -107,6 +107,7 @@ Page({
           report_text: report_text,
           report_photos: report_photos,
           wxappSessionId: wx.getStorageSync('wxappSessionId'),
+          isOpen: true
         },
         header: {
           'content-type': 'application/json'
