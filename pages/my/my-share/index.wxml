@@ -9,7 +9,8 @@
         <view class="decription">{{item.report_text}}</view>
         <view class="img-decription" wx:if="{{item.report_photos.length>0}}">
           <block wx:for="{{item.report_photos}}" wx:for-item="img">
-             <image src="{{img}}" class="{{'img img'+(item.report_photos.length>=3?'3':'1')}}"></image>
+             <image src="{{img}}" class="{{'img img'+(item.report_photos.length>=3?'3':'1')}}" 
+              data-imgIndex="{{imgIndex}}" data-pictures="{{item.report_photos}}" bindtap="previewImage"></image>
           </block>
         </view>
         <view class="state">

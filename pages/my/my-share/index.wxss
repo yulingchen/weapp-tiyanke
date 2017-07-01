@@ -49,6 +49,7 @@
 }
 .content-wrp .content{
   display: inline-block;
+  flex: 1;
 }
 .content-wrp .content .author{
   display: inline-block;
@@ -66,14 +67,8 @@
 .content-wrp .content .img-decription{
   margin-bottom: 13px;
 }
-/*.content-wrp .content .img-decription image{
-  width: 250px;
-}*/
-/*.content-wrp .content .img-decription .img{
-  width: 250px;
-}*/
 .content-wrp .content .img-decription .img1{
-  width: 50%;
+  width: 48%;
   margin-right: 10rpx;
   height: 120px
 }
