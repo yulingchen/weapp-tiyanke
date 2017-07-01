@@ -87,6 +87,8 @@ Page({
         }
       }
       upload();
+    }else{
+      report();
     }
 
     function report(){

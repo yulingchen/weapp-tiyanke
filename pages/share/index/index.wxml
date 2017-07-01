@@ -17,7 +17,7 @@
     <view class="content">
       <text class="author">{{item.nickName}}</text>
       <view class="decription">{{item.report_text}}</view>
-      <view class="img-decription">
+      <view class="img-decription" wx:if="{{item.report_photos.length>0}}">
         <image src="{{item.report_photos[0]}}"></image>
       </view>
       <view class="state">
