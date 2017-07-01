@@ -33,20 +33,9 @@
 	</view>
 
 	<view class="hot-area">
-		<view class="taste-item" bindtap="pushActivityDetailView">
-			<view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
-			<view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
-			<image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
+		<view class="taste-item" wx:for="{{projects}}" data-id="{{item._id}}" data-type="{{item.type}}" bindtap="gotoDetailView">
+			<view class="taste-title">{{item.title}}</view>
+			<image src="{{item.coverUrl}}" class="taste-cover"></image>
 		</view>
 	</view>
-
-  <!--
-	  <view  bindtap="bindViewTap" class="userinfo">
-	    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-	    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-	  </view>
-	  <view class="usermotto">
-	    <text class="user-motto">{{motto}}</text>
-	  </view>
-  -->
 </view>

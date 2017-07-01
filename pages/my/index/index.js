@@ -2,7 +2,7 @@ var app = getApp();
 
 Page({
   data:{
-    userInfo: {},
+    userInfo: {}
   },
 
   gotoMyShare: function (e) {
@@ -25,14 +25,8 @@ Page({
   },
 
   onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    
-    app.getUserInfo(function (userInfo) {
-     
-      that.setData({
-        userInfo: userInfo
-      })
+    this.setData({
+      userInfo: app.globalData.userInfo
     })
   }
 })
