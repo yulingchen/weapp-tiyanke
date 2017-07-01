@@ -1,43 +1,21 @@
 <view class="container">
   <view class="my-taste-page">
-
-    <view class="taste-item" bindtap="pushActivityDetailView">
-      <view class="top">
-        <view class="left">
-          <image src="../../../assets/images/share_avatar.png" />
-          <view>
-            <view class="name">哒哒</view>
-            <view class="time">最美的不是下雨天</view>
-          </view>
-        </view>
-        <view class="right">
-          9月21日
-        </view>
+    <view class="content-wrp" wx:for="{{reports}}">
+      <view class="avatar">
+        <image style="width: 38px; height: 38px;" src="{{item.avatarUrl}}"></image>
       </view>
-      <view class="main">
-        <view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
-        <view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
-        <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
-      </view>
-    </view>
-
-    <view class="taste-item" bindtap="pushActivityDetailView">
-      <view class="top">
-        <view class="left">
-          <image src="../../../assets/images/share_avatar.png" />
-          <view>
-            <view class="name">哒哒</view>
-            <view class="time">最美的不是下雨天</view>
-          </view>
+      <view class="content">
+        <text class="author">{{item.nickName}}</text>
+        <view class="decription">{{item.report_text}}</view>
+        <view class="img-decription" wx:if="{{item.report_photos.length>0}}">
+          <block wx:for="{{item.report_photos}}" wx:for-item="img">
+             <image src="{{img}}" class="{{'img img'+(item.report_photos.length>=3?'3':'1')}}"></image>
+          </block>
         </view>
-        <view class="right">
-          9月21日
+        <view class="state">
+          <text class="text">{{item.report_time}}</text>
+          <!--<image style="width: 20px; height: 20px;" src="../../../assets/images/comment.png"></image>-->
         </view>
-      </view>
-      <view class="main">
-        <view class="taste-title">明源云第二季黑客马拉松大赛邀请你</view>
-        <view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
-        <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
       </view>
     </view>
   </view>

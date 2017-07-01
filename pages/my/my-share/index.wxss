@@ -36,3 +36,61 @@
 .my-taste-page .taste-item .top .right{
   font-size: 28rpx;
 }
+
+.content-wrp{
+  padding: 14px 11px 9px 11px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+.content-wrp .avatar{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 9px;
+}
+.content-wrp .content{
+  display: inline-block;
+}
+.content-wrp .content .author{
+  display: inline-block;
+  line-height: 21px;
+  font-size:14px;
+  color:#576B95;
+}
+
+.content-wrp .content .decription{
+  line-height: 21px;
+  font-size:14px;
+  color:#000;
+  margin-bottom: 5px;
+}
+.content-wrp .content .img-decription{
+  margin-bottom: 13px;
+}
+/*.content-wrp .content .img-decription image{
+  width: 250px;
+}*/
+/*.content-wrp .content .img-decription .img{
+  width: 250px;
+}*/
+.content-wrp .content .img-decription .img1{
+  width: 50%;
+  margin-right: 10rpx;
+  height: 120px
+}
+.content-wrp .content .img-decription .img3{
+  width: 30%;
+  margin-right: 10rpx;
+  height: 80px;
+}
+.content-wrp .content .state{
+  color:#fff;
+}
+.content-wrp .content .state .text{
+  display: inline-block;
+  font-size: 24rpx;
+  color:#999;
+}
+.content-wrp .content .state image{
+  display: inline-block;
+  margin-left: 250px;
+}
