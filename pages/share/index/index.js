@@ -1,26 +1,35 @@
+var app = getApp();
+var util = require('../../../utils/util.js')
+
 Page({
   data:{
-    list:[
-      {
-        id:1,
-        img:[
-          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480',
-          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480',
-          'https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480'
-        ]
-      }
-    ]
+    reports:[],
+    userInfo: {}
   },
   onLoad: function () {
-    console.log('onLoad')
-    
-  },
-  gotoDetails(e){
-    let data = e.target.dataset
-    wx.navigateTo({
-      url: '../details/index',
+    var self=this
+    this.setData({
+      userInfo: app.globalData.userInfo
+    })
+
+    wx.request({
+      url: 'https://m.tiyanke.com/experience/project/reports', 
+      success: function(res) {
+        self.setData({
+          reports: res.data.data.map(function(report){
+            report.report_time = util.formatTime(new Date(report.report_time))
+            return report
+          })
+        })
+      }
     })
   },
+  // gotoDetails(e){
+  //   let data = e.target.dataset
+  //   wx.navigateTo({
+  //     url: '../details/index',
+  //   })
+  // },
   publishShare(){
     wx.navigateTo({
       url: '../add/index',
