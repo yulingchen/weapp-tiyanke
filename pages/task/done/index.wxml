@@ -11,7 +11,7 @@
           <view class="form-item">
               <view class="form-item-hd">性别：</view>
               <view class="form-item-bd">
-               <radio-group class="radio-group" bindchange="radioChange">
+               <radio-group class="radio-group" bindchange="radioChange" name="sex">
                   <label class="radio" wx:for="{{sex}}">
                     <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.name}}
                   </label>
@@ -23,7 +23,7 @@
           <view class="form-item">
               <view class="form-item-hd">出生日期：</view>
               <view class="form-item-bd">
-                <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+                <picker mode="date" value="{{date}}" name="date" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
                     <view class="weui-input">{{date}}</view>
                 </picker>
               </view>

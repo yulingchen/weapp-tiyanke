@@ -86,6 +86,7 @@
 .fixed-action{
   position: fixed;
   z-index: 100;
+  background-color: #fff;
   right: 20rpx;
   bottom: 40rpx;
 }
