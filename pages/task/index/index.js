@@ -14,6 +14,11 @@ Page({
     ]
   },
 
+  gotoUnlock(e){
+    let data = e.currentTarget.dataset;
+    wx.showToast({ title: '敬请期待' })
+  },
+
   onLoad: function (options) {
     var self = this;
 

@@ -22,12 +22,48 @@
   <view class="lincense-category">
     <view class="header" style="border: 0;">未解锁技能<text style="color:#999">(点击解锁)</text></view>
     <view class="weui-grids">
-        <block wx:for-items="{{allList}}" wx:key="{{index}}">
+        <view bindtap="gotoUnlock" data-type="免费试吃" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/free-eat.png" />
+                <view class="weui-grid__label">免费试吃</view>
+        </view>
+        <view bindtap="gotoUnlock" data-type="免费试穿" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/free-clothes.png" />
+                <view class="weui-grid__label">免费试穿</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="免费试驾" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/free-car.png" />
+                <view class="weui-grid__label">免费试驾</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="酒店试住" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/free-sleep.png" />
+                <view class="weui-grid__label">酒店试住</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="VR体验" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/vr.png" />
+                <view class="weui-grid__label">VR体验</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="旅游体验" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/tour.png" />
+                <view class="weui-grid__label">旅游体验</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/product.png" />
+                <view class="weui-grid__label">产品试用</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="游戏试玩" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/game.png" />
+                <view class="weui-grid__label">游戏试玩</view>
+        </view>
+         <view bindtap="gotoUnlock" data-type="查看更多" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/skill/more.png" />
+                <view class="weui-grid__label">查看更多</view>
+        </view>
+        <!--<block wx:for-items="{{allList}}" wx:key="{{index}}">
             <navigator url="{{'../taste-lincense-form/index?id='+item.id}}" class="weui-grid" hover-class="weui-grid_active">
                 <image class="weui-grid__icon" src="../../../assets/images/fx-active.png" />
                 <view class="weui-grid__label">{{item.name}}</view>
             </navigator>
-        </block>
+        </block>-->
      </view>
   </view>
 
