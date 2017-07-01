@@ -7,32 +7,38 @@
   margin-bottom: 0;
 }
 
-.my-taste-page .taste-item .top{
+.my-taste-page .taste-item .taste-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.my-taste-page .taste-item .top .left{
-  display: flex;
-  margin-bottom: 30rpx;
-}
-.my-taste-page .taste-item .top .left image{
-  width: 64rpx;
-  height: 64rpx;
-  border-radius: 50%;
-  margin-right: 15rpx;
+.my-taste-page .taste-item .taste-title .title{
+  flex: 1;
 }
 
-.my-taste-page .taste-item .top .left .name{
-  color:aqua;
-  font-size: 30rpx;
-}
-
-.my-taste-page .taste-item .top .left .time{
+.my-taste-page .taste-item .taste-title .btn{
+  border-radius: 4px;
+  border: 1px solid #eee;
+  width: 60px;
+  padding: 10rpx;
   color: #666;
-  font-size: 26rpx;
+  text-align: center;
+  font-size: 24rpx;
 }
 
-.my-taste-page .taste-item .top .right{
-  font-size: 28rpx;
+.my-taste-page .taste-item .taste-title .already{
+  background-color: #51be62;
+  color: #fff;
 }
+
+.my-taste-page .taste-item .taste-title .testing{
+  background-color: #ff8d16;
+  color: #fff;
+}
+
+
+.my-taste-page .taste-item .taste-title .end{
+  background-color: #f5f5f5;
+}
+
