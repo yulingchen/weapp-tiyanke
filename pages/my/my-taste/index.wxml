@@ -1,7 +1,18 @@
 <view class="container">
   <view class="my-taste-page">
 
-    <view class="taste-item" bindtap="pushActivityDetailView" wx:for="{{list}}" wx:for-item="item">
+    <view class="taste-item" wx:for="{{projects}}" data-id="{{item.projectId}}" data-type="{{item.type}}" bindtap="gotoDetailView">
+      <view class="main">
+        <view class="taste-title">
+          <text class="title">{{item.title}}</text>
+          <view class="testing btn" wx:if="{{item.will_status}}">去{{item.will_status}}</view>
+          <view class="end btn" wx:else>已完成</view>
+        </view>
+        <image src="{{item.coverUrl}}" class="taste-cover"></image>
+      </view>
+    </view>
+
+    <!--<view class="taste-item" bindtap="pushActivityDetailView" wx:for="{{list}}" wx:for-item="item">
       <view class="main">
         <view class="taste-title">
           <text class="title">明源云第二季黑客马拉松大赛邀请你</text>
@@ -18,7 +29,7 @@
         <view class="taste-desc">体验一天"明源人"，感受前沿技术，激发创意灵感</view>
         <image src="https://img.grouplus.com/admin-files/20456/poster_image/20170622091332850.jpg-proportionw480" class="taste-cover"></image>
       </view>
-    </view>
+    </view>-->
 
   
   </view>

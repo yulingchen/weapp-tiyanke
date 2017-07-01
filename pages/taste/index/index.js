@@ -1,10 +1,8 @@
-//index.js
-//获取应用实例
 var app = getApp()
+
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {}
+  data:{
+    projects:[]
   },
 
   // 跳转到达人榜页面
@@ -35,21 +33,29 @@ Page({
     })
   },
 
-  pushActivityDetailView: function(){
+  gotoDetailView: function(e){
+    var projectId = e.currentTarget.dataset.id
+    var projectType = e.currentTarget.dataset.type
+
+    var url = '';
+    if(projectType==1){ //项目类型为活动
+      url = '../detail/activity/index'
+    }
+
     wx.navigateTo({
-      url: '../detail/activity/index'
+      url: url + '?projectId='+ projectId
     })
   },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    // app.getUserInfo(function(userInfo){
-    //   //更新数据
-    //   that.setData({
-    //     userInfo:userInfo
-    //   })
-    // })
+
+  onLoad: function (option) {
+    var self=this
+    wx.request({
+      url: 'https://m.tiyanke.com/experience/projects/recomm', 
+      success: function(res) {
+        self.setData({
+          projects: res.data.data
+        })
+      }
+    })
   }
-  
 })
