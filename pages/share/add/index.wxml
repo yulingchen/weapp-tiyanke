@@ -19,7 +19,7 @@
     </view>
 
     <view class="section">
-      <textarea placeholder="请输入分享的内容"   placeholder-style="color:#999;"  />
+      <textarea placeholder="请输入分享的内容" placeholder-style="color:#999;" name="report_text"/>
 
       <view class="weui-uploader__bd upload-container">
         <view class="weui-uploader__files" id="uploaderFiles">
@@ -42,6 +42,6 @@
           <image class="right" src="../../../assets/images/right.png" mode="aspectFill" />
       </view>-->
     </view>
-    <view><button form-type="submit" class="btn">发表</button></view>
+    <view style="display:block;padding:020rpx"><button form-type="submit" class="btn">发表</button></view>
   </form>
 </view>
