@@ -1,17 +1,17 @@
 Page({
   data:{
     files: [],
+
     //默认未获取地址
-    hasLocation: false,
-    location: {},
+    // hasLocation: false,
+    // location: {},
   },
-  onLoad: function () {
-    console.log('onLoad')
-    
-  },
+
   publish(){
     console.log('发表')
+    debugger
   },
+
   chooseImage: function (e) {
     var that = this;
     wx.chooseImage({
@@ -25,6 +25,7 @@ Page({
       }
     })
   },
+
   previewImage: function (e) {
     wx.previewImage({
       current: e.currentTarget.id, // 当前显示图片的http链接
@@ -33,20 +34,20 @@ Page({
   },
 
   //获取经纬度
-  getLocation: function (e) {
-    var that = this
-    wx.getLocation({
-      success: function (res) {
-        console.log(res)
-        that.setData({
-          hasLocation: true,
-          location: {
-            longitude: res.longitude,
-            latitude: res.latitude
-          }
-        })
-      }
-    })
-  },
+  // getLocation: function (e) {
+  //   var that = this
+  //   wx.getLocation({
+  //     success: function (res) {
+  //       console.log(res)
+  //       that.setData({
+  //         hasLocation: true,
+  //         location: {
+  //           longitude: res.longitude,
+  //           latitude: res.latitude
+  //         }
+  //       })
+  //     }
+  //   })
+  // }
  
 })

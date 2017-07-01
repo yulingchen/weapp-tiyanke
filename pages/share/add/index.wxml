@@ -1,30 +1,29 @@
 <view class="add-share">
-  <view class="section">
-    <textarea placeholder="这一刻的想法"   placeholder-style="color:#999;"  />
+  <form bindsubmit="publish">
+    <view class="section">
+      <textarea placeholder="这一刻的想法" placeholder-style="color:#999;"  />
 
-    <view class="weui-uploader__bd upload-container">
+      <view class="weui-uploader__bd upload-container">
         <view class="weui-uploader__files" id="uploaderFiles">
-            <block wx:for-items="{{files}}" wx:key="{{index}}">
-                <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
-                    <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
-                </view>
-            </block>
+          <block wx:for-items="{{files}}" wx:key="{{index}}">
+            <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+              <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+            </view>
+          </block>
         </view>
         <view class="weui-uploader__input-box">
-            <view class="weui-uploader__input" bindtap="chooseImage"></view>
+          <view class="weui-uploader__input" bindtap="chooseImage"></view>
         </view>
+      </view>
+
+      <!--<view class="address">
+          <view class="left">
+             <image src="../../../assets/images/address.png" mode="aspectFill" />
+             <text>所在位置</text>
+          </view>
+          <image class="right" src="../../../assets/images/right.png" mode="aspectFill" />
+      </view>-->
     </view>
-
-    <!--<view class="address">
-        <view class="left">
-           <image src="../../../assets/images/address.png" mode="aspectFill" />
-           <text>所在位置</text>
-        </view>
-        <image class="right" src="../../../assets/images/right.png" mode="aspectFill" />
-    </view>-->
-
-  </view>
-  <view class="btn" bindtap="publish">发表</view>
-
-   
+    <view><button form-type="submit" class="btn">发表</button></view>
+  </form>
 </view>
