@@ -1,7 +1,25 @@
 <view class="add-share">
   <form bindsubmit="publish">
     <view class="section">
-      <textarea placeholder="这一刻的想法" placeholder-style="color:#999;"  />
+      <view class="weui-cells__title">选择要分享的体验</view>
+      <view class="weui-cells weui-cells_after-title">
+        <radio-group bindchange="radioChange">
+          <label class="weui-cell weui-check__label" wx:for="{{list}}" wx:key="{{item.value}}">
+            <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+            <view class="weui-cell__bd">{{item.name}}</view>
+            <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+              <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+            </view>
+          </label>
+        </radio-group>
+     </view>
+
+     <view class="division-20"></view>
+    </view>
+
+    <view class="section">
+      <textarea placeholder="请输入分享的内容"   placeholder-style="color:#999;"  />
 
       <view class="weui-uploader__bd upload-container">
         <view class="weui-uploader__files" id="uploaderFiles">

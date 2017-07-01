@@ -1,0 +1,15 @@
+<!--pages/my/taste-lincense/index.wxml-->
+<view class="lincense-page">
+  <view class="my-lincense">
+    <view class="header"> 我的执照</view>
+    <view class="main"> 
+        
+    </view>
+  </view>
+
+  <view class="lincense-category">
+    <view class="header">全部执照</view>
+
+  </view>
+
+</view>

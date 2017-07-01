@@ -1,0 +1,14 @@
+/* pages/my/taste-lincense/index.wxss */
+
+.lincense-page{
+  font-size: 28rpx;
+}
+
+.lincense-page .header{
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  color: #4d5152;
+}
+.my-lincense{
+
+}
