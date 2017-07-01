@@ -2,6 +2,8 @@
 
 .lincense-page{
   font-size: 28rpx;
+  min-height: 100%;
+  background-color: #eee;
 }
 
 .lincense-page .header{
@@ -10,5 +12,31 @@
   color: #4d5152;
 }
 .my-lincense{
-
+  background-color: #fff;
 }
+.my-lincense .main{
+  padding: 20rpx 0;
+}
+.my-lincense .main .list{
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  color: #666;
+}
+.my-lincense .main .list image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin-bottom: 5rpx;
+}
+
+.lincense-category{
+  background-color: #fff;
+  padding-bottom: 120rpx;
+}
+.lincense-category .weui-grid__label{
+  color: #666;
+}
+
+ 
+

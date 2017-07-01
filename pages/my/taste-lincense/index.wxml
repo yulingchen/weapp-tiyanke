@@ -3,13 +3,27 @@
   <view class="my-lincense">
     <view class="header"> 我的执照</view>
     <view class="main"> 
-        
+      <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex" >
+        <view class="list" wx:for="{{list}}" wx:for-item="item" bindtap="gotoLincenseForm" data-id="{{item.id}}">
+          <image src="../../../assets/images/fx-active.png"></image>
+          <view class="name">{{item.name}}</view>  
+        </view>
+      </scroll-view>
     </view>
   </view>
 
-  <view class="lincense-category">
-    <view class="header">全部执照</view>
+  <view class="division-20"></view>
 
+  <view class="lincense-category">
+    <view class="header" style="border: 0;">全部执照</view>
+    <view class="weui-grids">
+        <block wx:for-items="{{allList}}" wx:key="{{index}}">
+            <navigator url="{{'../taste-lincense-form/index?id='+item.id}}" class="weui-grid" hover-class="weui-grid_active">
+                <image class="weui-grid__icon" src="../../../assets/images/fx-active.png" />
+                <view class="weui-grid__label">{{item.name}}</view>
+            </navigator>
+        </block>
+     </view>
   </view>
 
 </view>

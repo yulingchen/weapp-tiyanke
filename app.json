@@ -20,7 +20,8 @@
     "pages/my/index/index",
     "pages/my/my-share/index",
     "pages/my/my-taste/index",
-    "pages/my/taste-lincense/index"
+    "pages/my/taste-lincense/index",
+    "pages/my/taste-lincense-form/index"
     
   ],
   "window":{

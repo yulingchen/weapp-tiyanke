@@ -14,6 +14,30 @@ Page({
         id: 2,
         name: '试吃',
       },
+      {
+        id: 1,
+        name: '样板房',
+      },
+      {
+        id: 2,
+        name: '试吃',
+      },
+      {
+        id: 1,
+        name: '样板房',
+      },
+      {
+        id: 2,
+        name: '试吃',
+      },
+      {
+        id: 1,
+        name: '样板房',
+      },
+      {
+        id: 2,
+        name: '试吃',
+      },
     ],
     allList: [
       {
@@ -24,7 +48,39 @@ Page({
         id: 3,
         name: '试吃',
       },
+      {
+        id: 1,
+        name: '试房',
+      },
+      {
+        id: 3,
+        name: '试吃',
+      },
+      {
+        id: 1,
+        name: '试房',
+      },
+      {
+        id: 3,
+        name: '试吃',
+      },
+      {
+        id: 1,
+        name: '试房',
+      },
+      {
+        id: 3,
+        name: '试吃',
+      },
     ],
+     
+  },
+
+  gotoLincenseForm(e){
+    let data = e.currentTarget.dataset
+    wx.navigateTo({
+      url: '../taste-lincense-form/index?id='+data.id,
+    })
   },
 
   /**
