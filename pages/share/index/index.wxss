@@ -82,6 +82,12 @@
   margin-left: 250px;
 }
 
+.refexp{
+  font-size:12px;
+  font-style: italic;
+  color:#666;
+}
+
 .fixed-action{
   position: fixed;
   z-index: 100;

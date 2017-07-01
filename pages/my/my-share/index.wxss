@@ -94,3 +94,9 @@
   display: inline-block;
   margin-left: 250px;
 }
+
+.refexp{
+  font-size:12px;
+  font-style: italic;
+  color:#666;
+}

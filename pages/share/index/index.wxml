@@ -24,10 +24,12 @@
            data-imgIndex="{{imgIndex}}" data-pictures="{{item.report_photos}}" bindtap="previewImage"></image>
         </block>
       </view>
+
       <view class="state">
         <text class="text">{{item.report_time}}</text>
         <!--<image style="width: 20px; height: 20px;" src="../../../assets/images/comment.png"></image>-->
       </view>
+      <view class="refexp" data-id="{{item.projectId}}" data-type="{{item.type}}" bindtap="gotoProjectDetailView"><view><text>{{item.title}}</text></view></view>
     </view>
   </view>
   
