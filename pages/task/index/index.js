@@ -79,7 +79,7 @@ Page({
   gotoLincenseForm(e){
     let data = e.currentTarget.dataset
     wx.navigateTo({
-      url: '../taste-lincense-form/index?id='+data.id,
+      url: '../done/index?id='+data.id,
     })
   },
 

@@ -17,12 +17,6 @@ Page({
       url: '../my-taste/index'
     })
   },
- 
-  gotoTasteLincense: function () {
-    wx.navigateTo({
-      url: '../taste-lincense/index'
-    })
-  },
 
   onLoad: function () {
     this.setData({
