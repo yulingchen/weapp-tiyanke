@@ -1,5 +1,4 @@
 <view class="container" wx:if="{{reports.length}}">
-{{reports.length}}
   <view class="my-taste-page">
     <view class="content-wrp" wx:for="{{reports}}">
       <view class="avatar">
@@ -26,5 +25,5 @@
 
 <view class="no-data-container" wx:else bindtap="gotoAddShare">
   <image src="../../../assets/images/no-data.png"></image>
-  <text class="text">快点去分享吧</text>
+  <text class="text">{{tips}}</text>
 </view>
