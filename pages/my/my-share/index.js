@@ -14,15 +14,20 @@ Page({
       urls: pictures
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
     var self=this;
+
+    wx.setNavigationBarTitle({
+		  title: options.isOpen=='true' ? '我的分享' : '我的反馈'
+		});
 
     (function shared(){
       wx.request({
         url: 'https://m.tiyanke.com/experience/project/refReports',
         method: 'POST',
         data: {
-          wxappSessionId: wx.getStorageSync('wxappSessionId')
+          wxappSessionId: wx.getStorageSync('wxappSessionId'),
+          isOpen: options.isOpen
         },
         header: {
           'content-type': 'application/json'
