@@ -1,7 +1,8 @@
 Page({
   data:{
     files: [],
-    list:[]
+    list:[],
+    projectIdParam: ''
 
     //默认未获取地址
     // hasLocation: false,
@@ -13,8 +14,12 @@ Page({
       url: '../../taste/index/index',
     })
   },
-  onLoad: function () {
+  onLoad: function (options) {
     var self = this;
+
+    this.setData({
+      projectIdParam: options.projectId
+    });
 
     (function enrolled(){
       wx.request({
@@ -35,7 +40,7 @@ Page({
           self.setData({
             list: res.data.data.map(function(project,index){
               return {
-                checked: index===0,
+                checked: options.projectId ? project.projectId==options.projectId : index===0,
                 name: project.title,
                 value: project.projectId
               }
@@ -47,6 +52,8 @@ Page({
   },
 
   radioChange: function (e) {
+    if(this.data.projectIdParam) return;
+
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     var radioItems = this.data.list;
     for (var i = 0, len = radioItems.length; i < len; ++i) {
@@ -111,8 +118,7 @@ Page({
           projectId: projectId,
           report_text: report_text,
           report_photos: report_photos,
-          wxappSessionId: wx.getStorageSync('wxappSessionId'),
-          isOpen: true
+          wxappSessionId: wx.getStorageSync('wxappSessionId')
         },
         header: {
           'content-type': 'application/json'

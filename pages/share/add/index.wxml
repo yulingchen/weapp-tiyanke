@@ -4,7 +4,7 @@
       <view class="weui-cells__title">选择要分享的体验</view>
       <view class="weui-cells weui-cells_after-title" >
         <radio-group bindchange="radioChange" wx:if="{{list.length}}">
-          <label class="weui-cell weui-check__label" wx:for="{{list}}" wx:key="{{item.value}}">
+          <label class="weui-cell weui-check__label" wx:for="{{list}}" wx:key="{{item.value}}" wx:if="{{!projectIdParam || projectIdParam&&item.value==projectIdParam}}">
             <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
             <view class="weui-cell__bd">{{item.name}}</view>
