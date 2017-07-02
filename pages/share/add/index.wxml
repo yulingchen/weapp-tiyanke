@@ -2,8 +2,8 @@
   <form bindsubmit="publish">
     <view class="section">
       <view class="weui-cells__title">选择要分享的体验</view>
-      <view class="weui-cells weui-cells_after-title">
-        <radio-group bindchange="radioChange">
+      <view class="weui-cells weui-cells_after-title" >
+        <radio-group bindchange="radioChange" wx:if="{{list.length}}">
           <label class="weui-cell weui-check__label" wx:for="{{list}}" wx:key="{{item.value}}">
             <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
 
@@ -13,6 +13,7 @@
             </view>
           </label>
         </radio-group>
+        <view bindtap="gotoTaste"  class="taste-tips">请至少体验一项内容</view>
      </view>
 
      <view class="division-20"></view>

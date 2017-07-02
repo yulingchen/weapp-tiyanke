@@ -8,6 +8,11 @@ Page({
     // location: {},
   },
 
+  gotoTaste(){
+    wx.switchTab({
+      url: '../../taste/index/index',
+    })
+  },
   onLoad: function () {
     var self = this;
 
