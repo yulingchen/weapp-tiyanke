@@ -32,7 +32,7 @@
          <image class="icon" src="../../../../assets/images/ticket.png" background-size="cover"/>
          <text>{{project.price=='0' ? '免费' : project.price}}</text>
         </view>
-        <text class="standby-ticket">剩余名额: {{project.limit-users.length}}</text>
+        <!--<text class="standby-ticket">剩余名额: {{project.limit-users.length}}</text>-->
       </view>
     </view>
 

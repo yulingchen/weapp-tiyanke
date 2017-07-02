@@ -1,7 +1,7 @@
 <view class="add-share">
   <form bindsubmit="publish">
     <view class="section">
-      <view class="weui-cells__title">选择要分享的体验</view>
+      <view class="weui-cells__title">选择发布报告的体验</view>
       <view class="weui-cells weui-cells_after-title" >
         <radio-group bindchange="radioChange" wx:if="{{list.length}}">
           <label class="weui-cell weui-check__label" wx:for="{{list}}" wx:key="{{item.value}}" wx:if="{{!projectIdParam || projectIdParam&&item.value==projectIdParam}}">
@@ -20,7 +20,7 @@
     </view>
 
     <view class="section">
-      <textarea placeholder="请输入分享的内容" placeholder-style="color:#999;" name="report_text"/>
+      <textarea placeholder="请输入报告内容" placeholder-style="color:#999;" name="report_text"/>
 
       <view class="weui-uploader__bd upload-container">
         <view class="weui-uploader__files" id="uploaderFiles">
@@ -43,6 +43,6 @@
           <image class="right" src="../../../assets/images/right.png" mode="aspectFill" />
       </view>-->
     </view>
-    <view style="display:block;padding:020rpx"><button form-type="submit" class="btn">发表</button></view>
+    <view style="display:block;padding:020rpx"><button form-type="submit" class="btn">发布</button></view>
   </form>
 </view>

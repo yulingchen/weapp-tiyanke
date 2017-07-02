@@ -73,6 +73,7 @@ Page({
             self.setData({
               willStatus: flow[index+1]
             })
+            wx.navigateBack();
           }else{
           	wx.showToast({title: res.data.msg})
           }
