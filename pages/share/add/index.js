@@ -1,7 +1,8 @@
 Page({
   data:{
     files: [],
-    list:[]
+    list:[],
+    projectIdParam: ''
 
     //默认未获取地址
     // hasLocation: false,
@@ -10,6 +11,10 @@ Page({
 
   onLoad: function (options) {
     var self = this;
+
+    this.setData({
+      projectIdParam: options.projectId
+    });
 
     (function enrolled(){
       wx.request({
@@ -42,6 +47,8 @@ Page({
   },
 
   radioChange: function (e) {
+    if(this.data.projectIdParam) return;
+
     console.log('radio发生change事件，携带value值为：', e.detail.value);
     var radioItems = this.data.list;
     for (var i = 0, len = radioItems.length; i < len; ++i) {
