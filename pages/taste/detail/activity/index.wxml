@@ -61,7 +61,8 @@
 
     <view class="acticity-btn-wrapper">
       <view class="btn" data-projectid="{{project._id}}" bindtap="enrollExp" wx:if="{{willStatus=='报名'}}">立即报名</view>
-      <view class="btn" data-projectid="{{project._id}}" bindtap="shareExp" wx:if="{{willStatus=='分享'}}">立即分享</view>
+      <view class="btn" data-projectid="{{project._id}}" bindtap="shareExp" wx:if="{{willStatus=='分享'}}">去分享</view>
+      <view class="btn" data-projectid="{{project._id}}" bindtap="shareExp" wx:if="{{willStatus=='反馈'}}">去反馈</view>
     </view>
 
   </view>

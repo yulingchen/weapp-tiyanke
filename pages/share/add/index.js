@@ -8,7 +8,7 @@ Page({
     // location: {},
   },
 
-  onLoad: function () {
+  onLoad: function (options) {
     var self = this;
 
     (function enrolled(){
@@ -30,7 +30,7 @@ Page({
           self.setData({
             list: res.data.data.map(function(project,index){
               return {
-                checked: index===0,
+                checked: options.projectId ? project.projectId==options.projectId : index===0,
                 name: project.title,
                 value: project.projectId
               }
@@ -106,8 +106,7 @@ Page({
           projectId: projectId,
           report_text: report_text,
           report_photos: report_photos,
-          wxappSessionId: wx.getStorageSync('wxappSessionId'),
-          isOpen: true
+          wxappSessionId: wx.getStorageSync('wxappSessionId')
         },
         header: {
           'content-type': 'application/json'
