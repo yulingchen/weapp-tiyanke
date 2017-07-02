@@ -1,4 +1,4 @@
-<view class="container " wx:if="{{projects.length}}">
+<view class="container " >
   <view class="my-taste-page">
 
     <view class="taste-item" wx:for="{{projects}}" data-id="{{item.projectId}}" data-type="{{item.type}}" bindtap="gotoDetailView">
@@ -14,9 +14,9 @@
   </view>
 </view>
 
-<view class="no-data-container" wx:else bindtap="gotoTaste">
+<!--<view class="no-data-container" wx:else bindtap="gotoTaste">
     <image src="../../../assets/images/no-data.png"></image>
     <text class="text">快点去体验吧</text>
-</view>
+</view>-->
 
 

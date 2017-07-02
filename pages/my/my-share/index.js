@@ -4,7 +4,7 @@ var util = require('../../../utils/util.js')
 Page({
 	data:{
     reports:[],
-    tips: '',
+    // tips: '',
   },
   gotoAddShare(){
     wx.navigateTo({
@@ -27,9 +27,9 @@ Page({
 		  title: options.isOpen=='true' ? '我的分享' : '我的反馈'
 		});
 
-    self.setData({
-      tips: options.isOpen == 'true' ? '快点去分享吧' : '暂无反馈'
-    })
+    // self.setData({
+    //   tips: options.isOpen == 'true' ? '快点去分享吧' : '暂无反馈'
+    // })
 
     (function shared(){
       wx.request({

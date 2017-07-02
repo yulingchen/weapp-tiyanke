@@ -16,11 +16,11 @@ Page({
     })
   },
 
-  gotoTaste(){
-    wx.switchTab({
-      url: '../../taste/index/index'
-    })
-  },
+  // gotoTaste(){
+  //   wx.switchTab({
+  //     url: '../../taste/index/index'
+  //   })
+  // },
 
   onLoad: function (option) {
     var self=this;
