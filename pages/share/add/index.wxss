@@ -53,3 +53,9 @@
 .address .left image{
   margin-right: 15rpx;
 }
+.taste-tips{
+  text-align:center;
+  padding:20rpx;
+  color:#4d5152;
+
+}

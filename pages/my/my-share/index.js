@@ -5,6 +5,11 @@ Page({
 	data:{
     reports:[]
   },
+  gotoAddShare(){
+    wx.navigateTo({
+      url: '../../share/add/index',
+    })
+  },
   previewImage: function (e) {
     var that = this,
       index = e.currentTarget.dataset.imgindex,
